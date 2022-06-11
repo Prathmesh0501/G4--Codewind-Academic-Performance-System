@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Evaluation System</title>
+
+    <style>
+
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(background.png);
+            background-size: cover;
+        }
+        .container {
+            background-color: rgba(232, 236, 232, 0.836);
+            padding: 30px;
+            margin: 5% auto;
+            width: 50%;
+            border-radius: 10px ;
+        }
+
+        .container h2{
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+
+        img {
+            width: 25%;
+            margin: 10px auto;
+        }
+
+        .login {
+            display: flex;
+            margin: 20px;
+        }
+
+        button {
+            padding: 8px;
+            width: 30%;
+            margin: auto;
+        }
+
+        button:hover{
+            background-color: antiquewhite  ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="text-align:center">Student Evaluation</h2>
+        <div class="t_lgn login">
+            <img style="width: 150px;" src="https://i.pinimg.com/originals/19/46/9a/19469aed7f222d6009f48158a682bb9c.png">
+            <button onclick="myOnClickFn()"> Teacher Login </button>
+        </div>
+
+        <script>
+            function myOnClickFn() {
+                document.location.href = "Teacher_Login.html";
+            }
+        </script>
+
+        <div class="s_lgn login">
+            <img style="width: 150px;" src="https://cdn-icons-png.flaticon.com/512/201/201818.png">
+            <button> Student Login </button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
