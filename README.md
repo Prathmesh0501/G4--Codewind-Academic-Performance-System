@@ -3,5 +3,5 @@ The Student Performance system is a Web based project where, The teachers add th
 
 To Open the project :- Go to htmls folder -> Open main.php
 
-To Install the SQL files in your localhost :- Import all the files Present in the Database folder in your server ( I used XXamp Server)
-Database name : fy_stud.
+To Install the SQL files in your localhost :- Import all the files Present in the Database folder in your server ( I used Xampp Server)
+Database name : apes.
