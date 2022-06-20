@@ -4,11 +4,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
-    url(../imgs/cont_bg.jpg ) no-repeat;
-  background-size: cover;
-  height: 100vh;
+header {
+    background-image: url(../imgs/contact.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 ul {
