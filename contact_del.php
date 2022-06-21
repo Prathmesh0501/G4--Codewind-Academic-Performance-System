@@ -11,16 +11,22 @@ if(isset($_GET['id']))
 
 	$id = validate($_GET['id']);
 
-	$sql = "DELETE FROM teacher_data
+	$sql = "DELETE FROM contact
 	        WHERE id=$id";
    $result = mysqli_query($db, $sql);
-   if ($result) {
-	 $status = "Record Deleted Successfully";
-        header("location: teacher_list.php?status=".$status);
-} 
-else{
-	$status = "Error in Deletion of Record";
-	header("location: edit_faculty.php?status=".$status);
+   if ($result)
+    {
+   	  header("Location: contact_person.php?success=successfully deleted");
+    }
+    else 
+    {
+       header("Location: contact_person.php?error=unknown error occurred&$user_data");
+    }
+
 }
-}
+
+
+
+
+
 ?>
