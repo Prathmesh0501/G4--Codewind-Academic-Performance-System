@@ -63,7 +63,7 @@
 if(isset($_POST['submit']))
 {
     
-    $con=mysqli_connect('localhost','root','','admin_log');
+    $con=mysqli_connect('localhost','root','','apes');
 
     $first_name=$_POST['first_name'];
     $last_name=$_POST['last_name'];

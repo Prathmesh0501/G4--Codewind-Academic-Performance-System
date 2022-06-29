@@ -14,7 +14,7 @@
 
     <div class="header">
         <ul>
-          <li><a href="student_list_main.html">Previous Page</a></li>
+          <li><a href="add_student_marks.html">Previous Page</a></li>
         </ul>
       </div>
 

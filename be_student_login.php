@@ -12,7 +12,7 @@
   <body>
     <header>
       
-    <form class="box" action="foy_student_login_php.php" method="POST">
+    <form class="box" action="be_student_login_php.php" method="POST">
       <h1>Fourth Year</h1>
 	  <h1>Student Login</h1>
 

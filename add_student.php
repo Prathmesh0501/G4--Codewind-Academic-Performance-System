@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Studnet</title>
+    <title>Add Student</title>
     <link rel="stylesheet" href="css/add_student.css" />
 </head>
 <body>
@@ -11,7 +11,7 @@
     <head></head>
 	  <div class="header">
 	    <ul>
-	      <li><a href="teacher_login_main.php"><u><--back</u></a></li>
+	      <li><a href="admin_login_main.html"><u>Previous Page</u></a></li>
 	    </ul>
 	  </div>
 	  </header>

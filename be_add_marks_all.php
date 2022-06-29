@@ -124,30 +124,26 @@
                     <th>Out of Marks(total)</th>
                 </tr>
                 <tr>
-                    <td>Theoretical Computer Science </td>
+                    <td>Digital Signal Processing </td>
                     <td><input class="obt_marks" type="text" name="in_tcs" value="<?=$rows['in_tcs']?>"></td>
                     <td>20</td>
                 </tr>
                 <tr>
-                    <td>Software Engineering</td>
+                    <td>Cryptography and System Security</td>
                     <td><input class="obt_marks" type="text" name="in_se" value="<?=$rows['in_se']?>"></td>
                     <td>20</td>
                 </tr>
                 <tr>
-                    <td>Computer Network</td>
+                    <td>Artificial Intelligence II</td>
                     <td><input class="obt_marks" type="text" name="in_cn" value="<?=$rows['in_cn']?>"></td>
                     <td>20</td>
                 </tr>
                 <tr>
-                    <td>Data Warehousing & Mining </td>
+                    <td>Elective-II</td>
                     <td><input class="obt_marks" type="text" name="in_dwm" value="<?=$rows['in_dwm']?>"></td>
                     <td>20</td>
                 </tr>
-                <tr>
-                    <td>Optional Course- 1</td>
-                    <td><input class="obt_marks" type="text" name="in_oc1" value="<?=$rows['in_oc1']?>"></td>
-                    <td>20</td>
-                </tr>
+                
             </table>
 
 	        </div>
@@ -164,27 +160,33 @@
                     <th>Out of Marks(total)</th>
                 </tr>
                 <tr>
-                    <td>Software Engineering</td>
+                    <td>Digital Signal Processing </td>
+                    <td><input class="obt_marks" type="text" name="p_tcs" value="<?=$rows['p_tcs']?>"></td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Cryptography and System Security</td>
                     <td><input class="obt_marks" type="text" name="p_se" value="<?=$rows['p_se']?>"></td>
                     <td>50</td>
                 </tr>
                 <tr>
-                    <td>Computer Network</td>
+                    <td>Artificial Intelligence II</td>
                     <td><input class="obt_marks" type="text" name="p_cn" value="<?=$rows['p_cn']?>"></td>
                     <td>50</td>
                 </tr>
                 <tr>
-                    <td>Data Warehousing & Mining </td>
+                    <td>Elective-II</td>
                     <td><input class="obt_marks" type="text" name="p_dwm" value="<?=$rows['p_dwm']?>"></td>
                     <td>50</td>
                 </tr>
                 <tr>
-                    <td>Business Comm. & Ethics II </td>
-                    <td><input class="obt_marks" type="text" name="p_bce2" value="<?=$rows['p_bce2']?>"></td>
+                    <td>Project I </td>
+                    <td><input class="obt_marks" type="text" name="p_proj1" value="<?=$rows['p_proj1']?>"></td>
                     <td>50</td>
                 </tr>
-                    <td>Mini Project 2-A</td>
-                    <td><input class="obt_marks" type="text" name="p_mini3" value="<?=$rows['p_mini3']?>"></td>
+                <tr>
+                    <td>Network Threats and Attacks Laboratory</td>
+                    <td><input class="obt_marks" type="text" name="p_ntal" value="<?=$rows['p_ntal']?>"></td>
                     <td>50</td>
                 </tr>
             </table>
@@ -203,28 +205,23 @@
                     <th>Out of Marks(total)</th>
                 </tr>
                 <tr>
-                    <td>Theoretical Computer Science </td>
+                    <td>Digital Signal Processing </td>
                     <td><input class="obt_marks" type="text" name="te_tcs" value="<?=$rows['te_tcs']?>"></td>
                     <td>75</td>
                 </tr>
                 <tr>
-                    <td>Software Engineering</td>
+                    <td>Cryptography and System Security</td>
                     <td><input class="obt_marks" type="text" name="te_se" value="<?=$rows['te_se']?>"></td>
                     <td>75</td>
                 </tr>
                 <tr>
-                    <td>Computer Network</td>
+                    <td>Artificial Intelligence II</td>
                     <td><input class="obt_marks" type="text" name="te_cn" value="<?=$rows['te_cn']?>"></td>
                     <td>75</td>
                 </tr>
                 <tr>
-                    <td>Data Warehousing & Mining </td>
+                    <td>Elective-II</td>
                     <td><input class="obt_marks" type="text" name="te_dwm" value="<?=$rows['te_dwm']?>"></td>
-                    <td>75</td>
-                </tr>
-                <tr>
-                    <td>Optional Course- 1</td>
-                    <td><input class="obt_marks" type="text" name="te_oc1" value="<?=$rows['te_oc1']?>"></td>
                     <td>75</td>
                 </tr>
             </table>
@@ -234,7 +231,7 @@
 	     </div>
 
 
-	     <!--Sem I end here -->
+	     <!--Sem VII end here -->
 
 	     <div class="sem2 detail">
 
@@ -262,30 +259,26 @@
                     <th>Out of Marks(total)</th>
                 </tr>
                 <tr>
-                    <td>System Programming & Compiler Construction</td>
-                    <td><input class="obt_marks" type="text" name="in_spcc" value="<?=$rows['in_spcc']?>"></td>
+                    <td>Data Warehouse and Mining </td>
+                    <td><input class="obt_marks" type="text" name="in_dwm2" value="<?=$rows['in_dwm2']?>"></td>
                     <td>20</td>
                 </tr>
                 <tr>
-                    <td>Cryptography & System Security </td>
-                    <td><input class="obt_marks" type="text" name="in_css" value="<?=$rows['in_css']?>"></td>
+                    <td>Human Machine Interaction </td>
+                    <td><input class="obt_marks" type="text" name="in_hmi" value="<?=$rows['in_hmi']?>"></td>
                     <td>20</td>
                 </tr>
                 <tr>
-                    <td>Mobile Computing</td>
-                    <td><input class="obt_marks" type="text" name="in_mc" value="<?=$rows['in_mc']?>"></td>
+                    <td>Parallel and distributed Systems</td>
+                    <td><input class="obt_marks" type="text" name="in_pds" value="<?=$rows['in_pds']?>"></td>
                     <td>20</td>
                 </tr>
                 <tr>
-                    <td>Artificial Intelligence</td>
-                    <td><input class="obt_marks" type="text" name="in_ai" value="<?=$rows['in_ai']?>"></td>
+                    <td>Elective-III </td>
+                    <td><input class="obt_marks" type="text" name="in_e3" value="<?=$rows['in_e3']?>"></td>
                     <td>20</td>
                 </tr>
-                <tr>
-                    <td>Optional Course -2</td>
-                    <td><input class="obt_marks" type="text" name="in_oc2" value="<?=$rows['in_oc2']?>"></td>
-                    <td>20</td>
-                </tr>
+                
             </table>
 	        </div>
 
@@ -301,28 +294,33 @@
                     <th>Out of Marks(total)</th>
                 </tr>
                 <tr>
-                    <td>Cryptography & System Security </td>
-                    <td><input class="obt_marks" type="text" name="p_css" value="<?=$rows['p_css']?>"></td>
+                    <td>Data Warehouse and Mining </td>
+                    <td><input class="obt_marks" type="text" name="p_dwm2" value="<?=$rows['p_dwm2']?>"></td>
                     <td>50</td>
                 </tr>
                 <tr>
-                    <td>Mobile Computing</td>
-                    <td><input class="obt_marks" type="text" name="p_mc" value="<?=$rows['p_mc']?>"></td>
+                    <td>Human Machine Interaction </td>
+                    <td><input class="obt_marks" type="text" name="p_hmi" value="<?=$rows['p_hmi']?>"></td>
                     <td>50</td>
                 </tr>
                 <tr>
-                    <td>Artificial Intelligence</td>
-                    <td><input class="obt_marks" type="text" name="p_ai" value="<?=$rows['p_ai']?>"></td>
+                    <td>Parallel and distributed Systems</td>
+                    <td><input class="obt_marks" type="text" name="p_pds" value="<?=$rows['p_pds']?>"></td>
                     <td>50</td>
                 </tr>
                 <tr>
-                    <td>Cloud Computing</td>
-                    <td><input class="obt_marks" type="text" name="p_cc" value="<?=$rows['p_cc']?>"></td>
+                    <td>Elective-III </td>
+                    <td><input class="obt_marks" type="text" name="p_e3" value="<?=$rows['p_e3']?>"></td>
                     <td>50</td>
                 </tr>
                 <tr>
-                    <td>Mini Project Lab: 2B</td>
-                    <td><input class="obt_marks" type="text" name="p_mini4" value="<?=$rows['p_mini4']?>"></td>
+                    <td>Project II </td>
+                    <td><input class="obt_marks" type="text" name="p_proj2" value="<?=$rows['p_proj2']?>"></td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Cloud Computing Laboratory</td>
+                    <td><input class="obt_marks" type="text" name="p_ccl" value="<?=$rows['p_ccl']?>"></td>
                     <td>50</td>
                 </tr>
             </table>
@@ -340,28 +338,23 @@
                     <th>Out of Marks(total)</th>
                 </tr>
                 <tr>
-                    <td>System Programming & Compiler Construction</td>
-                    <td><input class="obt_marks" type="text" name="te_spcc" value="<?=$rows['te_spcc']?>"></td>
+                    <td>Data Warehouse and Mining </td>
+                    <td><input class="obt_marks" type="text" name="te_dwm2" value="<?=$rows['te_dwm2']?>"></td>
                     <td>75</td>
                 </tr>
                 <tr>
-                    <td>Cryptography & System Security </td>
-                    <td><input class="obt_marks" type="text" name="te_css" value="<?=$rows['te_css']?>"></td>
+                    <td>Human Machine Interaction </td>
+                    <td><input class="obt_marks" type="text" name="te_hmi" value="<?=$rows['te_hmi']?>"></td>
                     <td>75</td>
                 </tr>
                 <tr>
-                    <td>Mobile Computing</td>
-                    <td><input class="obt_marks" type="text" name="te_mc" value="<?=$rows['te_mc']?>"></td>
+                    <td>Parallel and distributed Systems</td>
+                    <td><input class="obt_marks" type="text" name="te_pds" value="<?=$rows['te_pds']?>"></td>
                     <td>75</td>
                 </tr>
                 <tr>
-                    <td>Artificial Intelligence</td>
-                    <td><input class="obt_marks" type="text" name="te_ai" value="<?=$rows['te_ai']?>"></td>
-                    <td>75</td>
-                </tr>
-                <tr>
-                    <td>Optional Course -2</td>
-                    <td><input class="obt_marks" type="text" name="te_oc2" value="<?=$rows['te_oc2']?>"></td>
+                    <td>Elective-III </td>
+                    <td><input class="obt_marks" type="text" name="te_e3" value="<?=$rows['te_e3']?>"></td>
                     <td>75</td>
                 </tr>
             </table>

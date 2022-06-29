@@ -14,7 +14,7 @@
     <h1>Teacher's List</h1>
 	<div class="header">
 	   	<ul>
-	      <li><a href="admin_login_main.html">Previous Page</a></li>
+	      <li><a href="teacher.html">Previous Page</a></li>
 	    </ul>
 	  </div>
 	  </header>
@@ -57,7 +57,7 @@
             <td>
 			
                 <a href="update.php?id=<?=$rows['id']?>"
-				    class="add">Update</a>
+				    class="update">Update</a>
 				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp	
 					
 					

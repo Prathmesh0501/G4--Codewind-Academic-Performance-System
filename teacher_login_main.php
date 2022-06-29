@@ -17,8 +17,8 @@
       </div>
 
 	<div class="container">
-    	<a href="student_list_main.html">Student's List</a><br>
-    	<a href="add_student.php">Add Student</a><br>
+    	<a href="view_students_list.html">View Student's List</a><br>
+    	<a href="add_student_marks.html">Add Student Marks</a><br>
     </div>
 
 </body>

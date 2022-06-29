@@ -1,16 +1,16 @@
-<?php include "ty_student_list_php.php"; ?>
+<?php include "be_student_list_php.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TY Student's List</title>
+    <title>BE Student's List</title>
     <link rel="stylesheet" type="text/css" href="css/student_list.css">
 </head>
 <body>
 
-    <h1>TY Student's List</h1>
+    <h1>BE Student's List</h1>
 
     <div class="header">
         <ul>
@@ -51,11 +51,11 @@
             <td><?=$rows['seat_no']?></td>
             <td>
 
-            <a href="ty_add_marks_all.php?id=<?=$rows['id']?>"
+            <a href="be_add_marks_all.php?id=<?=$rows['id']?>"
             class="add">Add </a>
             &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 
-                <a href="delete_ty.php?id=<?=$rows['id']?>" 
+                <a href="delete_be.php?id=<?=$rows['id']?>" 
                     class="delete">Delete</a>
             </td>
         </tr>

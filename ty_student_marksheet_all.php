@@ -69,166 +69,166 @@ $data2=mysqli_fetch_assoc($run2);
          	    <th colspan="15">Subject</th>
          	</tr>
          	<tr>
-         		<th colspan="3">SPM</th>
-         		<th colspan="3">IOT</th>
-         		<th colspan="3">AWP</th>
-         		<th colspan="3">AI</th>
-         		<th colspan="3">NGT</th>   
+         		<th colspan="3">TCS</th>
+         		<th colspan="3">SE</th>
+         		<th colspan="3">CN</th>
+         		<th colspan="3">DWM</th>
+         		<th colspan="3">OC1</th>   
          	</tr>
          	<tr>
-         		<!--IP-->
+         		<!--TCS-->
          		<th>Int</th>
          		<th>Ext</th>
                <th>Pract</th>
-         		<!--DE-->
+         		<!--SE-->
          		<th>Int</th>
          		<th>Ext</th>
                <th>Pract</th>
-         		<!--DM-->
+         		<!--CN-->
          		<th>Int</th>
          		<th>Ext</th>
                <th>Pract</th>
-         		<!--CS-->
+         		<!--DWM-->
          		<th>Int</th>
          		<th>Ext</th>
                <th>Pract</th>
-         		<!--OS-->
+         		<!--OC1-->
          		<th>Int</th>
          		<th>Ext</th>
                <th>Pract</th>
          	</tr>
          	<tr>
-         		<!--IP-->
-         		<td><?php echo $data2['in_iot'];?></td>
+         		<!--TCS-->
+         		<td><?php echo $data2['in_tcs'];?></td>
                <?php
-                  if ($data2['in_iot']>=10) 
+                  if ($data2['in_tcs']>=10) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['te_iot'];?></td>
+         		<td><?php echo $data2['te_tcs'];?></td>
                <?php
-                  if ($data2['te_iot']>=30) 
+                  if ($data2['te_tcs']>=30) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['p_iot'];?></td>
+         		<td><?php echo $data2['p_tcs'];?></td>
                <?php
-                  if ($data2['p_iot']>=20) 
+                  if ($data2['p_tcs']>=20) 
                   {
                      $count++;
                   }
                ?>
-         		<!--awp-->
-         		<td><?php echo $data2['in_awp'];?></td>
+         		<!--SE-->
+         		<td><?php echo $data2['in_se'];?></td>
                <?php
-                  if ($data2['in_awp']>=10) 
+                  if ($data2['in_se']>=10) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['te_awp'];?></td>
+         		<td><?php echo $data2['te_se'];?></td>
                <?php
-                  if ($data2['te_awp']>=30) 
+                  if ($data2['te_se']>=30) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['p_awp'];?></td>
+         		<td><?php echo $data2['p_se'];?></td>
                <?php
-                  if ($data2['p_awp']>=20) 
+                  if ($data2['p_se']>=20) 
                   {
                      $count++;
                   }
                ?>
-         		<!--ai-->
-         		<td><?php echo $data2['in_ai'];?></td>
+         		<!--CN-->
+         		<td><?php echo $data2['in_cn'];?></td>
                <?php
-                  if ($data2['in_ai']>=10) 
+                  if ($data2['in_cn']>=10) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['te_ai'];?></td>
+         		<td><?php echo $data2['te_cn'];?></td>
                <?php
-                  if ($data2['te_ai']>=30) 
+                  if ($data2['te_cn']>=30) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['p_ai'];?></td>
+         		<td><?php echo $data2['p_cn'];?></td>
                <?php
-                  if ($data2['p_ai']>=20) 
+                  if ($data2['p_cn']>=20) 
                   {
                      $count++;
                   }
                ?>
-         		<!--ngt-->
-         		<td><?php echo $data2['in_ngt'];?></td>
+         		<!--DWM-->
+         		<td><?php echo $data2['in_dwm'];?></td>
                <?php
-                  if ($data2['in_ngt']>=10) 
+                  if ($data2['in_dwm']>=10) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['te_ngt'];?></td>
+         		<td><?php echo $data2['te_dwm'];?></td>
                <?php
-                  if ($data2['te_ngt']>=30) 
+                  if ($data2['te_dwm']>=30) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['p_ngt'];?></td>
+         		<td><?php echo $data2['p_dwm'];?></td>
                <?php
-                  if ($data2['p_ngt']>=20) 
+                  if ($data2['p_dwm']>=20) 
                   {
                      $count++;
                   }
                ?>
-         		<!--spm-->
-         		<td><?php echo $data2['in_spm'];?></td>
+         		<!--OC1-->
+         		<td><?php echo $data2['in_oc1'];?></td>
                <?php
-                  if ($data2['in_spm']>=10) 
+                  if ($data2['in_oc1']>=10) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['te_spm'];?></td>
+         		<td><?php echo $data2['te_oc1'];?></td>
                <?php
-                  if ($data2['te_spm']>=30) 
+                  if ($data2['te_oc1']>=30) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['p_spm'];?></td>
+         		<td><?php echo $data2['p_oc1'];?></td>
                <?php
-                  if ($data2['p_spm']>=20) 
+                  if ($data2['p_oc1']>=20) 
                   {
                      $count++;
                   }
                ?>
          	</tr>
             <tr>
-               <!--IP-->
-               <td colspan="2"><?php echo $total1=$data2['in_iot']+$data2['te_iot']; ?></td>
+               <!--TCS-->
+               <td colspan="2"><?php echo $total1=$data2['in_tcs']+$data2['te_tcs']; ?></td>
                <td></td>
-               <!--DE-->
-               <td colspan="2"><?php echo $total2=$data2['in_awp']+$data2['te_awp']; ?></td>
+               <!--SE-->
+               <td colspan="2"><?php echo $total2=$data2['in_se']+$data2['te_se']; ?></td>
                <td></td>
-               <!--DM-->
-               <td colspan="2"><?php echo $total3=$data2['in_ai']+$data2['te_ai']; ?></td>
+               <!--CN-->
+               <td colspan="2"><?php echo $total3=$data2['in_cn']+$data2['te_cn']; ?></td>
                <td></td>
-               <!--CS-->
-               <td colspan="2"><?php echo $total4=$data2['in_ngt']+$data2['te_ngt']; ?></td>
+               <!--DWM-->
+               <td colspan="2"><?php echo $total4=$data2['in_dwm']+$data2['te_dwm']; ?></td>
                <td></td>
-               <!--OS-->
-               <td colspan="2"><?php echo $total5=$data2['in_spm']+$data2['te_spm']; ?></td>
+               <!--OC1-->
+               <td colspan="2"><?php echo $total5=$data2['in_oc1']+$data2['te_oc1']; ?></td>
                <td></td>    
             </tr>
             <tr>
                <th>Total Marks</th>
-               <td colspan="14"><?php echo $all=$total1+$data2['p_iot']+$total2+$data2['p_awp']+$total3+$data2['p_ai']+$total4+$data2['p_ngt']+$total5+$data2['p_spm'] ; ?>/750</td>
+               <td colspan="14"><?php echo $all=$total1+$data2['p_tcs']+$total2+$data2['p_se']+$total3+$data2['p_cn']+$total4+$data2['p_dwm']+$total5+$data2['p_oc1'] ; ?>/750</td>
             </tr>
             <tr>
                <th>Grade</th>
@@ -309,167 +309,167 @@ $data2=mysqli_fetch_assoc($run2);
                 <th colspan="15">Subject</th>
             </tr>
             <tr>
-               <th colspan="3">SQA</th>
-               <th colspan="3">SIC</th>
-               <th colspan="3">BI</th>
-               <th colspan="3">ITSM</th>
-               <th colspan="3">EN</th>   
+               <th colspan="3">SPCC</th>
+               <th colspan="3">CSS</th>
+               <th colspan="3">MC</th>
+               <th colspan="3">AI</th>
+               <th colspan="3">OC2</th>   
             </tr>
             <tr>
-               <!--IP-->
+               <!--SPCC-->
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
-               <!--DE-->
+               <!--CSS-->
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
-               <!--DM-->
+               <!--MC-->
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
-               <!--CS-->
+               <!--AI-->
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
-               <!--OS-->
+               <!--OC2-->
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
             </tr>
             <tr>
-               <!--sqa-->
-               <td><?php echo $data2['in_sqa'];?></td>
+               <!--SPCC-->
+               <td><?php echo $data2['in_spcc'];?></td>
                <?php
-                  if ($data2['in_sqa']>=10) 
+                  if ($data2['in_spcc']>=10) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['te_sqa'];?></td>
+               <td><?php echo $data2['te_spcc'];?></td>
                <?php
-                  if ($data2['te_sqa']>=30) 
+                  if ($data2['te_spcc']>=30) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_sqa'];?></td>
+               <td><?php echo $data2['p_spcc'];?></td>
                <?php
-                  if ($data2['p_sqa']>=20) 
+                  if ($data2['p_spcc']>=20) 
                   {
                      $count1++;
                   }
                ?>
 
-               <!--sic-->
-               <td><?php echo $data2['in_sic'];?></td>
+               <!--css-->
+               <td><?php echo $data2['in_css'];?></td>
                <?php
-                  if ($data2['in_sic']>=10) 
+                  if ($data2['in_css']>=10) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['te_sic'];?></td>
+               <td><?php echo $data2['te_css'];?></td>
                <?php
-                  if ($data2['te_sic']>=30) 
+                  if ($data2['te_css']>=30) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_sic'];?></td>
+               <td><?php echo $data2['p_css'];?></td>
                <?php
-                  if ($data2['p_sic']>=20) 
+                  if ($data2['p_css']>=20) 
                   {
                      $count1++;
                   }
                ?>
-               <!--bi-->
-               <td><?php echo $data2['in_bi'];?></td>
+               <!--MC-->
+               <td><?php echo $data2['in_mc'];?></td>
                <?php
-                  if ($data2['in_bi']>=10) 
+                  if ($data2['in_mc']>=10) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['te_bi'];?></td>
+               <td><?php echo $data2['te_mc'];?></td>
                <?php
-                  if ($data2['te_bi']>=30) 
+                  if ($data2['te_mc']>=30) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_bi'];?></td>
+               <td><?php echo $data2['p_mc'];?></td>
                <?php
-                  if ($data2['p_bi']>=20) 
+                  if ($data2['p_mc']>=20) 
                   {
                      $count1++;
                   }
                ?>
-               <!--itsm-->
-               <td><?php echo $data2['in_itsm'];?></td>
+               <!--AI-->
+               <td><?php echo $data2['in_ai'];?></td>
                <?php
-                  if ($data2['in_itsm']>=10) 
+                  if ($data2['in_ai']>=10) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['te_itsm'];?></td>
+               <td><?php echo $data2['te_ai'];?></td>
                <?php
-                  if ($data2['te_itsm']>=30) 
+                  if ($data2['te_ai']>=30) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_itsm'];?></td>
+               <td><?php echo $data2['p_ai'];?></td>
                <?php
-                  if ($data2['p_itsm']>=20) 
+                  if ($data2['p_ai']>=20) 
                   {
                      $count1++;
                   }
                ?>
-               <!--en-->
-               <td><?php echo $data2['in_en'];?></td>
+               <!--OC2-->
+               <td><?php echo $data2['in_oc2'];?></td>
                <?php
-                  if ($data2['in_en']>=10) 
+                  if ($data2['in_oc2']>=10) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['te_en'];?></td>
+               <td><?php echo $data2['te_oc2'];?></td>
                <?php
-                  if ($data2['te_en']>=30) 
+                  if ($data2['te_oc2']>=30) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_en'];?></td>
+               <td><?php echo $data2['p_oc2'];?></td>
                <?php
-                  if ($data2['p_en']>=20) 
+                  if ($data2['p_oc2']>=20) 
                   {
                      $count1++;
                   }
                ?>
             </tr>
             <tr>
-               <!--IP-->
-               <td colspan="2"><?php echo $total6=$data2['in_sqa']+$data2['te_sqa']; ?></td>
+               <!--SPCC-->
+               <td colspan="2"><?php echo $total6=$data2['in_spcc']+$data2['te_spcc']; ?></td>
                <td></td>
-               <!--DE-->
-               <td colspan="2"><?php echo $total7=$data2['in_sic']+$data2['te_sic']; ?></td>
+               <!--CSS-->
+               <td colspan="2"><?php echo $total7=$data2['in_css']+$data2['te_css']; ?></td>
                <td></td>
-               <!--DM-->
-               <td colspan="2"><?php echo $total8=$data2['in_bi']+$data2['te_bi']; ?></td>
+               <!--MC-->
+               <td colspan="2"><?php echo $total8=$data2['in_mc']+$data2['te_mc']; ?></td>
                <td></td>
-               <!--CS-->
-               <td colspan="2"><?php echo $total9=$data2['in_itsm']+$data2['te_itsm']; ?></td>
+               <!--AI-->
+               <td colspan="2"><?php echo $total9=$data2['in_ai']+$data2['te_ai']; ?></td>
                <td></td>
-               <!--OS-->
-               <td colspan="2"><?php echo $total10=$data2['in_en']+$data2['te_en']; ?></td>
+               <!--OC2-->
+               <td colspan="2"><?php echo $total10=$data2['in_oc2']+$data2['te_oc2']; ?></td>
                <td></td>    
             </tr>
             <tr>
                <th>Total Marks</th>
-               <td colspan="14"><?php echo $all=$total6+$data2['p_sqa']+$total7+$data2['p_sic']+$total8+$data2['p_bi']+$total9+$data2['p_itsm']+$total10+$data2['p_en'] ; ?>/750</td>
+               <td colspan="14"><?php echo $all=$total6+$data2['p_spcc']+$total7+$data2['p_css']+$total8+$data2['p_mc']+$total9+$data2['p_ai']+$total10+$data2['p_oc2'] ; ?>/750</td>
             </tr>
             <tr>
                <th>Grade</th>

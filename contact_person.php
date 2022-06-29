@@ -27,7 +27,7 @@
 
     <table>
         <tr id="header">
-            <th>#</th>
+            <th>Sr No.</th>
             <th>First name</th>
             <th>Last name</th>
             <th>Year</th>

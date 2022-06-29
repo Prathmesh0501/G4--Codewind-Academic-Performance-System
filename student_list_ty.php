@@ -14,7 +14,7 @@
 
     <div class="header">
         <ul>
-          <li><a href="add_student_marks.html">Previous Page</a></li>
+          <li><a href="student_list_main.html">Previous Page</a></li>
         </ul>
       </div>
 
@@ -31,7 +31,7 @@
             <th>E-mail</th>
             <th>Phone</th>
             <th>Seat Number</th>
-            <th>Add Marks / Delete Student</th>
+            
         </tr>
         
           <!-  <?php 
@@ -49,15 +49,7 @@
             <td><?=$rows['Email']?></td>
             <td><?=$rows['phone']?> </td>
             <td><?=$rows['seat_no']?></td>
-            <td>
-
-            <a href="ty_add_marks_all.php?id=<?=$rows['id']?>"
-            class="add">Add </a>
-            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-
-                <a href="delete_ty.php?id=<?=$rows['id']?>" 
-                    class="delete">Delete</a>
-            </td>
+           
         </tr>
          <?php } ?>
 

@@ -1,7 +1,13 @@
-<?php 
 
-$db_user = "root";
-$db_pass = "";
-$db_name = "apes";
+<?php
+  define('HOST','localhost');
+  define('USER','root');
+  define('PASS','');
+  define('DB','apes');
+  $con = mysqli_connect(HOST,USER,PASS,DB);
+  if(mysqli_connect_errno())
+{
+		echo 'Failed to connect';
+}
 
-$db = mysqli_connect("localhost","root","","apes");
+?>
