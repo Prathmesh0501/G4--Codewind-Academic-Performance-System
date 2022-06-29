@@ -31,8 +31,7 @@
 		$result2 = mysqli_query($db,$query);
 		if($result2)
 		{
-
-			header("Location:fy_student_add.php?error= Student added succefully in the DataBase");
+			header("Location:fy_student_add.php?Student added succefully in the DataBase");
 		}
 
 	}

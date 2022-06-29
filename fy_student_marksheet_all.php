@@ -22,7 +22,7 @@
      $seat_no = 'seat_no';
 
      $sql = "SELECT * FROM fy_stud_data WHERE seat_no='".$_SESSION['seat_no']."'";
-     $result1 = mysqli_query($db,$sql);
+     $result1 = mysqli_query($con,$sql);
 
      while ($row = mysqli_fetch_array($result1))
       {
@@ -54,7 +54,7 @@ $count1 = 0;
 
 $seat_no='seat_no';
  $sql2="SELECT * FROM `fy_stud_data` WHERE seat_no='".$_SESSION['seat_no']."'";
-$run2=mysqli_query($db,$sql2);
+$run2=mysqli_query($con,$sql2);
  
  if(mysqli_num_rows($run2)>0)
 {
@@ -73,145 +73,138 @@ $data2=mysqli_fetch_assoc($run2);
          	    <th colspan="15">Subject</th>     
          	</tr>
          	<tr>
-         		<th colspan="3">IP</th>
-         		<th colspan="3">DE</th>
-         		<th colspan="3">DM</th>
-         		<th colspan="3">CS</th>
-         		<th colspan="3">OS</th>   
+         		<th colspan="2">EMATHS1</th>
+         		<th colspan="3">EPHY1</th>
+         		<th colspan="3">ECHEM1</th>
+         		<th colspan="3">EMECH</th>
+         		<th colspan="3">BEE</th>   
          	</tr>
          	<tr>
-         		<!--IP-->
+         		<!--EMATHS1-->
+         		<th>Int</th>
+         		<th>Ext</th>
+               	<!--EPHY1-->
          		<th>Int</th>
          		<th>Ext</th>
                <th>Pract</th>
-         		<!--DE-->
+         		<!--ECHEM1-->
          		<th>Int</th>
          		<th>Ext</th>
                <th>Pract</th>
-         		<!--DM-->
+         		<!--EMECH-->
          		<th>Int</th>
          		<th>Ext</th>
                <th>Pract</th>
-         		<!--CS-->
-         		<th>Int</th>
-         		<th>Ext</th>
-               <th>Pract</th>
-         		<!--OS-->
+         		<!--BEE-->
          		<th>Int</th>
          		<th>Ext</th>
                <th>Pract</th>
          	</tr>
          	<tr>
-         		<!--IP-->
-         		<td><?php echo $data2['in_ip'];?></td>
+         		<!--EMATHS1-->
+         		<td><?php echo $data2['in_emaths1'];?></td>
                <?php
-                  if ($data2['in_ip']>=10) 
+                  if ($data2['in_emaths1']>=10) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['te_ip'];?></td>
+         		<td><?php echo $data2['te_emaths1'];?></td>
                <?php
-                  if ($data2['te_ip']>=30) 
+                  if ($data2['te_emaths1']>=30) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['p_ip'];?></td>
+         	
+
+         		<!--EPHY1-->
+         		<td><?php echo $data2['in_ephy1'];?></td>
                <?php
-                  if ($data2['p_ip']>=20) 
+                  if ($data2['in_ephy1']>=10) 
+                  {
+                     $count++;
+                  }
+               ?>
+         		<td><?php echo $data2['te_ephy1'];?></td>
+               <?php
+                  if ($data2['te_ephy1']>=30) 
+                  {
+                     $count++;
+                  }
+               ?>
+         		<td><?php echo $data2['p_ephy1'];?></td>
+               <?php
+                  if ($data2['p_ephy1']>=20) 
                   {
                      $count++;
                   }
                ?>
 
-         		<!--DE-->
-         		<td><?php echo $data2['in_de'];?></td>
+         		<!--ECHEM1-->
+         		<td><?php echo $data2['in_echem1'];?></td>
                <?php
-                  if ($data2['in_de']>=10) 
+                  if ($data2['in_echem1']>=10) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['te_de'];?></td>
+         		<td><?php echo $data2['te_echem1'];?></td>
                <?php
-                  if ($data2['te_de']>=30) 
+                  if ($data2['te_echem1']>=30) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['p_de'];?></td>
+         		<td><?php echo $data2['p_echem1'];?></td>
                <?php
-                  if ($data2['p_de']>=20) 
-                  {
-                     $count++;
-                  }
-               ?>
-
-         		<!--DM-->
-         		<td><?php echo $data2['in_dm'];?></td>
-               <?php
-                  if ($data2['in_dm']>=10) 
-                  {
-                     $count++;
-                  }
-               ?>
-         		<td><?php echo $data2['te_dm'];?></td>
-               <?php
-                  if ($data2['te_dm']>=30) 
-                  {
-                     $count++;
-                  }
-               ?>
-         		<td><?php echo $data2['p_dm'];?></td>
-               <?php
-                  if ($data2['p_dm']>=20) 
+                  if ($data2['p_echem1']>=20) 
                   {
                      $count++;
                   }
                ?>
 
-         		<!--CS-->
-         		<td><?php echo $data2['in_cs'];?></td>
+         		<!--EMECH-->
+         		<td><?php echo $data2['in_emech'];?></td>
                <?php
-                  if ($data2['in_cs']>=10) 
+                  if ($data2['in_emech']>=10) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['te_cs'];?></td>
+         		<td><?php echo $data2['te_emech'];?></td>
                <?php
-                  if ($data2['te_cs']>=30) 
+                  if ($data2['te_emech']>=30) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['p_cs'];?></td>
+         		<td><?php echo $data2['p_emech'];?></td>
                <?php
-                  if ($data2['p_cs']>=20) 
+                  if ($data2['p_emech']>=20) 
                   {
                      $count++;
                   }
                ?>
 
-         		<!--OS-->
-         		<td><?php echo $data2['in_os'];?></td>
+         		<!--BEE-->
+         		<td><?php echo $data2['in_bee'];?></td>
                <?php
-                  if ($data2['in_os']>=10) 
+                  if ($data2['in_bee']>=10) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['te_os'];?></td>
+         		<td><?php echo $data2['te_bee'];?></td>
                <?php
-                  if ($data2['te_os']>=30) 
+                  if ($data2['te_bee']>=30) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['p_os'];?></td>
+         		<td><?php echo $data2['p_bee'];?></td>
                <?php
-                  if ($data2['p_os']>=20) 
+                  if ($data2['p_bee']>=20) 
                   {
                      $count++;
                   }
@@ -219,26 +212,26 @@ $data2=mysqli_fetch_assoc($run2);
 
          	</tr>
             <tr>
-               <!--IP-->
-               <td colspan="2"><?php echo $total1=$data2['in_ip']+$data2['te_ip']; ?></td>
+               <!--EMATHS1-->
+               <td colspan="2"><?php echo $total1=$data2['in_emaths1']+$data2['te_emaths1']; ?></td>
                <td> </td>
-               <!--DE-->
-               <td colspan="2"><?php echo $total2=$data2['in_de']+$data2['te_de']; ?></td>
+               <!--EPHY1-->
+               <td colspan="2"><?php echo $total2=$data2['in_ephy1']+$data2['te_ephy1']; ?></td>
                <td></td>
-               <!--DM-->
-               <td colspan="2"><?php echo $total3=$data2['in_dm']+$data2['te_dm']; ?></td>
+               <!--ECHEM1-->
+               <td colspan="2"><?php echo $total3=$data2['in_echem1']+$data2['te_echem1']; ?></td>
                <td></td>
-               <!--CS-->
-               <td colspan="2"><?php echo $total4=$data2['in_cs']+$data2['te_cs']; ?></td>
+               <!--EMECH-->
+               <td colspan="2"><?php echo $total4=$data2['in_emech']+$data2['te_emech']; ?></td>
                <td></td>
-               <!--OS-->
-               <td colspan="2"><?php echo $total5=$data2['in_os']+$data2['te_os']; ?></td>
+               <!--BEE-->
+               <td colspan="2"><?php echo $total5=$data2['in_bee']+$data2['te_bee']; ?></td>
                <td></td>    
             </tr>
 
             <tr>
                <th>Total Marks</th>
-               <td colspan="14"><?php echo $all=$total1+$data2['p_ip']+$total2+$data2['p_de']+$total3+$data2['p_dm']+$total4+$data2['p_cs']+$total5+$data2['p_os'] ; ?>/750</td>
+               <td colspan="14"><?php echo $all=$total1+$total2+$data2['p_ephy1']+$total3+$data2['p_echem1']+$total4+$data2['p_emech']+$total5+$data2['p_bee'] ; ?>/750</td>
             </tr>
             <tr>
                <th>Grade</th>
@@ -320,145 +313,173 @@ $data2=mysqli_fetch_assoc($run2);
                 <th colspan="15">Subject</th>
             </tr>
             <tr>
-               <th colspan="3">OOPS</th>
-               <th colspan="3">MP</th>
-               <th colspan="3">WP</th>
-               <th colspan="3">NM</th>
-               <th colspan="3">GC</th>   
+               <th colspan="3">EMATHS2</th>
+               <th colspan="3">EPHY2</th>
+               <th colspan="3">ECHEM2</th>
+               <th colspan="3">EG</th>
+               <th colspan="3">CP</th>
+               <th colspan="3">PCE1</th>   
             </tr>
             <tr>
-               <!--IP-->
+               <!--EMATHS2-->
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
-               <!--DE-->
+               <!--EPHY2-->
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
-               <!--DM-->
+               <!--ECHEM2-->
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
-               <!--CS-->
+               <!--EG-->
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
-               <!--OS-->
+               <!--CP-->
+               <th>Int</th>
+               <th>Ext</th>
+               <th>Pract</th>
+               <!--PCE1-->
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
             </tr>
             <tr>
-               <!--OOPS-->
-               <td><?php echo $data2['in_oops'];?></td>
+               <!--EMATHS2-->
+               <td><?php echo $data2['in_emaths2'];?></td>
                <?php
-                  if ($data2['in_oops']>=10) 
+                  if ($data2['in_emaths2']>=10) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['te_oops'];?></td>
+               <td><?php echo $data2['te_emaths2'];?></td>
                <?php
-                  if ($data2['te_oops']>=30) 
+                  if ($data2['te_emaths2']>=30) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_oops'];?></td>
+               <td><?php echo $data2['p_emaths2'];?></td>
                <?php
-                  if ($data2['p_oops']>=20) 
-                  {
-                     $count1++;
-                  }
-               ?>
-
-               <!--MI-->
-               <td><?php echo $data2['in_mi'];?></td>
-               <?php
-                  if ($data2['in_mi']>=10) 
-                  {
-                     $count1++;
-                  }
-               ?>
-               <td><?php echo $data2['te_mi'];?></td>
-               <?php
-                  if ($data2['te_mi']>=30) 
-                  {
-                     $count1++;
-                  }
-               ?>
-               <td><?php echo $data2['p_mi'];?></td>
-               <?php
-                  if ($data2['p_mi']>=20) 
+                  if ($data2['p_emaths2']>=20) 
                   {
                      $count1++;
                   }
                ?>
 
-               <!--WB-->
-               <td><?php echo $data2['in_wb'];?></td>
+               <!--EPHY2-->
+               <td><?php echo $data2['in_ephy2'];?></td>
                <?php
-                  if ($data2['in_wb']>=10) 
+                  if ($data2['in_ephy2']>=10) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['te_wb'];?></td>
+               <td><?php echo $data2['te_ephy2'];?></td>
                <?php
-                  if ($data2['te_wb']>=30) 
+                  if ($data2['te_ephy2']>=30) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_wb'];?></td>
+               <td><?php echo $data2['p_ephy2'];?></td>
                <?php
-                  if ($data2['p_wb']>=20) 
-                  {
-                     $count1++;
-                  }
-               ?>
-
-               <!--NM-->
-               <td><?php echo $data2['in_nm'];?></td>
-               <?php
-                  if ($data2['in_nm']>=10) 
-                  {
-                     $count1++;
-                  }
-               ?>
-               <td><?php echo $data2['te_nm'];?></td>
-               <?php
-                  if ($data2['te_nm']>=30) 
-                  {
-                     $count1++;
-                  }
-               ?>
-               <td><?php echo $data2['p_nm'];?></td>
-               <?php
-                  if ($data2['p_nm']>=30) 
+                  if ($data2['p_ephy2']>=20) 
                   {
                      $count1++;
                   }
                ?>
 
-               <!--GC-->
-               <td><?php echo $data2['in_gc'];?></td>
+               <!--ECHEM2-->
+               <td><?php echo $data2['in_echem2'];?></td>
                <?php
-                  if ($data2['in_gc']>=10) 
+                  if ($data2['in_echem2']>=10) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['te_gc'];?></td>
+               <td><?php echo $data2['te_echem2'];?></td>
                <?php
-                  if ($data2['te_gc']>=30) 
+                  if ($data2['te_echem2']>=30) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_gc'];?></td>
+               <td><?php echo $data2['p_echem2'];?></td>
                <?php
-                  if ($data2['p_gc']>=20) 
+                  if ($data2['p_echem2']>=20) 
+                  {
+                     $count1++;
+                  }
+               ?>
+
+               <!--EG-->
+               <td><?php echo $data2['in_eg'];?></td>
+               <?php
+                  if ($data2['in_eg']>=10) 
+                  {
+                     $count1++;
+                  }
+               ?>
+               <td><?php echo $data2['te_eg'];?></td>
+               <?php
+                  if ($data2['te_eg']>=30) 
+                  {
+                     $count1++;
+                  }
+               ?>
+               <td><?php echo $data2['p_eg'];?></td>
+               <?php
+                  if ($data2['p_eg']>=30) 
+                  {
+                     $count1++;
+                  }
+               ?>
+
+               <!--CP-->
+               <td><?php echo $data2['in_cp'];?></td>
+               <?php
+                  if ($data2['in_cp']>=10) 
+                  {
+                     $count1++;
+                  }
+               ?>
+               <td><?php echo $data2['te_cp'];?></td>
+               <?php
+                  if ($data2['te_cp']>=30) 
+                  {
+                     $count1++;
+                  }
+               ?>
+               <td><?php echo $data2['p_cp'];?></td>
+               <?php
+                  if ($data2['p_cp']>=30) 
+                  {
+                     $count1++;
+                  }
+               ?>
+
+               <!--PCE1-->
+               <td><?php echo $data2['in_pce1'];?></td>
+               <?php
+                  if ($data2['in_pce1']>=10) 
+                  {
+                     $count1++;
+                  }
+               ?>
+               <td><?php echo $data2['te_pce1'];?></td>
+               <?php
+                  if ($data2['te_pce1']>=30) 
+                  {
+                     $count1++;
+                  }
+               ?>
+               <td><?php echo $data2['p_pce1'];?></td>
+               <?php
+                  if ($data2['p_pce1']>=20) 
                   {
                      $count1++;
                   }
@@ -466,25 +487,28 @@ $data2=mysqli_fetch_assoc($run2);
 
             </tr>
             <tr>
-               <!--IP-->
-               <td colspan="2"><?php echo $total6=$data2['in_oops']+$data2['te_oops']; ?></td>
+               <!--EMATHS2-->
+               <td colspan="2"><?php echo $total6=$data2['in_emaths2']+$data2['te_emaths2']; ?></td>
                <td></td>
-               <!--DE-->
-               <td colspan="2"><?php echo $total7=$data2['in_mi']+$data2['te_mi']; ?></td>
+               <!--EPHY2-->
+               <td colspan="2"><?php echo $total7=$data2['in_ephy2']+$data2['te_ephy2']; ?></td>
                <td></td>
-               <!--DM-->
-               <td colspan="2"><?php echo $total8=$data2['in_wb']+$data2['te_wb']; ?></td>
+               <!--ECHEM2-->
+               <td colspan="2"><?php echo $total8=$data2['in_echem2']+$data2['te_echem2']; ?></td>
                <td></td>
-               <!--CS-->
-               <td colspan="2"><?php echo $total9=$data2['in_nm']+$data2['te_nm']; ?></td>
+               <!--EG-->
+               <td colspan="2"><?php echo $total9=$data2['in_eg']+$data2['te_eg']; ?></td>
                <td></td>
-               <!--OS-->
-               <td colspan="2"><?php echo $total10=$data2['in_gc']+$data2['te_gc']; ?></td>
+               <!--CP-->
+               <td colspan="2"><?php echo $total9=$data2['in_cp']+$data2['te_cp']; ?></td>
+               <td></td>
+               <!--PCE1-->
+               <td colspan="2"><?php echo $total10=$data2['in_pce1']+$data2['te_pce1']; ?></td>
                <td></td>    
             </tr>
             <tr>
                <th>Total Marks</th>
-               <td colspan="14"><?php echo $all=$total6+$data2['p_oops']+$total7+$data2['p_mi']+$total8+$data2['p_wb']+$total9+$data2['p_nm']+$total10+$data2['p_gc'] ; ?>/750</td>
+               <td colspan="14"><?php echo $all=$total6+$data2['p_emaths2']+$total7+$data2['p_ephy2']+$total8+$data2['p_echem2']+$total9+$data2['p_eg']+$total7+$data2['p_cp']+$total10+$data2['p_pce1'] ; ?>/750</td>
             </tr>
             <tr>
                <th>Grade</th>

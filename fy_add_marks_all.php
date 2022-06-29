@@ -126,28 +126,28 @@
 		                    <th>Out of Marks(total)</th>
 		                </tr>
 		                <tr>
-		                    <td>Imperative Programming</td>
-		                    <td><input class="obt_marks" type="text" name="in_ip" value="<?=$rows['in_ip']?>"></td>
+		                    <td>Engineering Mathematics-I</td>
+		                    <td><input class="obt_marks" type="text" name="in_emaths1" value="<?=$rows['in_emaths1']?>"></td>
 		                    <td>20</td>
 		                </tr>
 		                <tr>
-		                    <td>Digital Electronics</td>
-		                    <td><input class="obt_marks" type="text" name="in_de" value="<?=$rows['in_de']?>"></td>
+		                    <td>Engineering Physics-I</td>
+		                    <td><input class="obt_marks" type="text" name="in_ephy1" value="<?=$rows['in_ephy1']?>"></td>
 		                    <td>20</td>
 		                </tr>
 		                <tr>
-		                    <td>Discrete Mathematics</td>
-		                    <td><input class="obt_marks" type="text" name="in_dm" value="<?=$rows['in_dm']?>"></td>
+		                    <td>Engineering Chemistry-I</td>
+		                    <td><input class="obt_marks" type="text" name="in_echem1" value="<?=$rows['in_echem1']?>"></td>
 		                    <td>20</td>
 		                </tr>
 		                <tr>
-		                    <td>Communication Skills</td>
-		                    <td><input class="obt_marks" type="text" name="in_cs" value="<?=$rows['in_cs']?>"></td>
+		                    <td>Engineering Mechanics</td>
+		                    <td><input class="obt_marks" type="text" name="in_emech" value="<?=$rows['in_emech']?>"></td>
 		                    <td>20</td>
 		                </tr>
 		                <tr>
-		                    <td>Operating Systems</td>
-		                    <td><input class="obt_marks" type="text" name="in_os" value="<?=$rows['in_os']?>"></td>
+		                    <td>Basic Electrical Engineering</td>
+		                    <td><input class="obt_marks" type="text" name="in_bee" value="<?=$rows['in_bee']?>"></td>
 		                    <td>20</td>
 		                </tr>
 		            </table>
@@ -165,28 +165,28 @@
 		                    <th>Out of Marks(total)</th>
 		                </tr>
 		                <tr>
-		                    <td>Imperative Programming</td>
-		                    <td><input class="obt_marks" type="text" name="p_ip" value="<?=$rows['p_ip']?>"></td>
+		                    <td>Engineering Mathematics-I</td>
+		                    <td><input class="obt_marks" type="text" name="p_emaths1" value="<?=$rows['p_emaths1']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		                <tr>
-		                    <td>Digital Electronics</td>
-		                    <td><input class="obt_marks" type="text" name="p_de" value="<?=$rows['p_de']?>"></td>
+		                    <td>Engineering Physics-I</td>
+		                    <td><input class="obt_marks" type="text" name="p_ephy1" value="<?=$rows['p_ephy1']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		                <tr>
-		                    <td>Discrete Mathematics</td>
-		                    <td><input class="obt_marks" type="text" name="p_dm" value="<?=$rows['p_dm']?>"></td>
+		                    <td>Engineering Chemistry-I</td>
+		                    <td><input class="obt_marks" type="text" name="p_echem1" value="<?=$rows['p_echem1']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		                <tr>
-		                    <td>Communication Skills</td>
-		                    <td><input class="obt_marks" type="text" name="p_cs" value="<?=$rows['p_cs']?>"></td>
+		                    <td>Engineering Mechanics</td>
+		                    <td><input class="obt_marks" type="text" name="p_emech" value="<?=$rows['p_emech']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		                <tr>
-		                    <td>Operating Systems</td>
-		                    <td><input class="obt_marks" type="text" name="p_os" value="<?=$rows['p_os']?>"></td>
+		                    <td>Basic Electrical Engineering</td>
+		                    <td><input class="obt_marks" type="text" name="p_bee" value="<?=$rows['p_bee']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		            </table>
@@ -204,29 +204,29 @@
 		                    <th>Out of Marks(total)</th>
 		                </tr>
 		                <tr>
-		                    <td>Imperative Programming</td>
-		                    <td><input class="obt_marks" type="text" name="te_ip" value="<?=$rows['te_ip']?>"></td>
-		                    <td>75</td>
+		                    <td>Engineering Mathematics-I</td>
+		                    <td><input class="obt_marks" type="text" name="te_emaths1" value="<?=$rows['te_emaths1']?>"></td>
+		                    <td>80</td>
 		                </tr>
 		                <tr>
-		                    <td>Digital Electronics</td>
-		                    <td><input class="obt_marks" type="text" name="te_de" value="<?=$rows['te_de']?>"></td>
-		                    <td>75</td>
+		                    <td>Engineering Physics-I</td>
+		                    <td><input class="obt_marks" type="text" name="te_ephy1" value="<?=$rows['te_ephy1']?>"></td>
+		                    <td>80</td>
 		                </tr>
 		                <tr>
-		                    <td>Discrete Mathematics</td>
-		                    <td><input class="obt_marks" type="text" name="te_dm" value="<?=$rows['te_dm']?>"></td>
-		                    <td>75</td>
+		                    <td>Engineering Chemistry-I</td>
+		                    <td><input class="obt_marks" type="text" name="te_echem1" value="<?=$rows['te_echem1']?>"></td>
+		                    <td>80</td>
 		                </tr>
 		                <tr>
-		                    <td>Communication Skills</td>
-		                    <td><input class="obt_marks" type="text" name="te_cs" value="<?=$rows['te_cs']?>"></td>
-		                    <td>75</td>
+		                    <td>Engineering Mechanics</td>
+		                    <td><input class="obt_marks" type="text" name="te_emech" value="<?=$rows['te_emech']?>"></td>
+		                    <td>80</td>
 		                </tr>
 		                <tr>
-		                    <td>Operating Systems</td>
-		                    <td><input class="obt_marks" type="text" name="te_os" value="<?=$rows['te_os']?>"></td>
-		                    <td>75</td>
+		                    <td>Basic Electrical Engineering</td>
+		                    <td><input class="obt_marks" type="text" name="te_bee" value="<?=$rows['te_bee']?>"></td>
+		                    <td>80</td>
 		                </tr>
 		            </table>
 	        </div>
@@ -262,28 +262,33 @@
 		                    <th>Out of Marks(total)</th>
 		                </tr>
 		                <tr>
-		                    <td>Object Oriented Programming</td>
-		                    <td><input class="obt_marks" type="text" name="in_oops" value="<?=$rows['in_oops']?>"></td>
+		                    <td>Engineering Mathematics-II</td>
+		                    <td><input class="obt_marks" type="text" name="in_emaths2" value="<?=$rows['in_emaths2']?>"></td>
 		                    <td>20</td>
 		                </tr>
 		                <tr>
-		                    <td>Microprossser Architecture</td>
-		                    <td><input class="obt_marks" type="text" name="in_mi" value="<?=$rows['in_mi']?>"></td>
+		                    <td>Engineering Physics-II</td>
+		                    <td><input class="obt_marks" type="text" name="in_ephy2" value="<?=$rows['in_ephy2']?>"></td>
 		                    <td>20</td>
 		                </tr>
 		                <tr>
-		                    <td>Web Programming</td>
-		                    <td><input class="obt_marks" type="text" name="in_wb" value="<?=$rows['in_wb']?>"></td>
+		                    <td>Engineering Chemistry-II</td>
+		                    <td><input class="obt_marks" type="text" name="in_echem2" value="<?=$rows['in_echem2']?>"></td>
 		                    <td>20</td>
 		                </tr>
 		                <tr>
-		                    <td>Numerical and Statistical Methods</td>
-		                    <td><input class="obt_marks" type="text" name="in_nm" value="<?=$rows['in_nm']?>"></td>
+		                    <td>Engineering Graphics</td>
+		                    <td><input class="obt_marks" type="text" name="in_eg" value="<?=$rows['in_eg']?>"></td>
+		                    <td>20</td>
+		                </tr>
+						 <tr>
+		                    <td>C programming</td>
+		                    <td><input class="obt_marks" type="text" name="in_cp" value="<?=$rows['in_cp']?>"></td>
 		                    <td>20</td>
 		                </tr>
 		                <tr>
-		                    <td>Green Computing</td>
-		                    <td><input class="obt_marks" type="text" name="in_gc" value="<?=$rows['in_gc']?>"></td>
+		                    <td>Professional Communication and Ethics- I</td>
+		                    <td><input class="obt_marks" type="text" name="in_pce1" value="<?=$rows['in_pce1']?>"></td>
 		                    <td>20</td>
 		                </tr>
 		            </table>
@@ -301,28 +306,33 @@
 		                    <th>Out of Marks(total)</th>
 		                </tr>
 		                <tr>
-		                    <td>Object Oriented Programming</td>
-		                    <td><input class="obt_marks" type="text" name="p_oops" value="<?=$rows['p_oops']?>"></td>
+		                    <td>Engineering Mathematics-II</td>
+		                    <td><input class="obt_marks" type="text" name="p_emaths2" value="<?=$rows['p_emaths2']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		                <tr>
-		                    <td>Microprossser Architecture</td>
-		                    <td><input class="obt_marks" type="text" name="p_mi" value="<?=$rows['p_mi']?>"></td>
+		                    <td>Engineering Physics-II</td>
+		                    <td><input class="obt_marks" type="text" name="p_ephy2" value="<?=$rows['p_ephy2']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		                <tr>
-		                    <td>Web Programming</td>
-		                    <td><input class="obt_marks" type="text" name="p_wb" value="<?=$rows['p_wb']?>"></td>
+		                    <td>Engineering Chemistry-II</td>
+		                    <td><input class="obt_marks" type="text" name="p_echem2" value="<?=$rows['p_echem2']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		                <tr>
-		                    <td>Numerical and Statistical Methods</td>
-		                    <td><input class="obt_marks" type="text" name="p_nm" value="<?=$rows['p_nm']?>"></td>
+		                    <td>Engineering Graphics</td>
+		                    <td><input class="obt_marks" type="text" name="p_eg" value="<?=$rows['p_eg']?>"></td>
+		                    <td>50</td>
+		                </tr>
+						<tr>
+		                    <td>C programming</td>
+		                    <td><input class="obt_marks" type="text" name="p_cp" value="<?=$rows['p_cp']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		                <tr>
-		                    <td>Green Computing</td>
-		                    <td><input class="obt_marks" type="text" name="p_gc" value="<?=$rows['p_gc']?>"></td>
+		                    <td>Professional Communication and Ethics- I</td>
+		                    <td><input class="obt_marks" type="text" name="p_pce1" value="<?=$rows['p_pce1']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		            </table> 
@@ -340,29 +350,34 @@
 		                    <th>Out of Marks(total)</th>
 		                </tr>
 		                <tr>
-		                    <td>Object Oriented Programming</td>
-		                    <td><input class="obt_marks" type="text" name="te_oops" value="<?=$rows['te_oops']?>"></td>
-		                    <td>75</td>
+		                    <td>Engineering Mathematics-II</td>
+		                    <td><input class="obt_marks" type="text" name="te_emaths2" value="<?=$rows['te_emaths2']?>"></td>
+		                    <td>80</td>
 		                </tr>
 		                <tr>
-		                    <td>Microprossser Architecture</td>
-		                    <td><input class="obt_marks" type="text" name="te_mi" value="<?=$rows['te_mi']?>"></td>
-		                    <td>75</td>
+		                    <td>Engineering Physics-II</td>
+		                    <td><input class="obt_marks" type="text" name="te_ephy2" value="<?=$rows['te_ephy2']?>"></td>
+		                    <td>80</td>
 		                </tr>
 		                <tr>
-		                    <td>Web Programming</td>
-		                    <td><input class="obt_marks" type="text" name="te_wb" value="<?=$rows['te_wb']?>"></td>
-		                    <td>75</td>
+		                    <td>Engineering Chemistry-II</td>
+		                    <td><input class="obt_marks" type="text" name="te_echem2" value="<?=$rows['te_echem2']?>"></td>
+		                    <td>80</td>
 		                </tr>
 		                <tr>
-		                    <td>Numerical and Statistical Methods</td>
-		                    <td><input class="obt_marks" type="text" name="te_nm" value="<?=$rows['te_nm']?>"></td>
-		                    <td>75</td>
+		                    <td>Engineering Graphics</td>
+		                    <td><input class="obt_marks" type="text" name="te_eg" value="<?=$rows['te_eg']?>"></td>
+		                    <td>80</td>
+		                </tr>
+						<tr>
+		                    <td>C programming</td>
+		                    <td><input class="obt_marks" type="text" name="te_cp" value="<?=$rows['te_cp']?>"></td>
+		                    <td>80</td>
 		                </tr>
 		                <tr>
-		                    <td>Green Computing</td>
-		                    <td><input class="obt_marks" type="text" name="te_gc" value="<?=$rows['te_gc']?>"></td>
-		                    <td>75</td>
+		                    <td>Professional Communication and Ethics- I</td>
+		                    <td><input class="obt_marks" type="text" name="te_pce1" value="<?=$rows['te_pce1']?>"></td>
+		                    <td>80</td>
 		                </tr>
 		            </table>  
 	        </div>

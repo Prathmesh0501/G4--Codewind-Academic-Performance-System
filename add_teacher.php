@@ -11,7 +11,7 @@
     
       <div class="header">
         <ul>
-          <li><a href="admin_login_main.html">Previous Page</a></li>
+          <li><a href="teacher.html">Previous Page</a></li>
         </ul>
       </div>
 
@@ -27,6 +27,7 @@
             <?php if (isset($_GET['error'])) { ?>
                     <p class="error"><?php echo $_GET['error']; ?></p>
                 <?php } ?>
+
 
             <div id="name">
                 <h2 class="name">
