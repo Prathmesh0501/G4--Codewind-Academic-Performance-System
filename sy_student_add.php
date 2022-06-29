@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/fy_sy_ty_add_student.css" />
 </head>
 <body>
-
-    
-      <div class="header">
-        <ul>
-          <li><a href="add_student.php">Previous Page</a></li>
-        </ul>
-      </div>
-
-
-    
+<header>
+    <div class="header">
+      <ol>
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+      </ol>
+      <ul>
+        <li><a href="add_student.php"><u>Previous Page</u></a></li>
+      </ul>
+    </div>
+  </header>
     <div class="regform">
         <h1>Add SY Student</h1>
     </div>
@@ -30,10 +30,9 @@
                 <?php } ?>     <div id="name">
                 <h2 class="name">
                 Name </h2>
-                <input class="firstname" type="text" name="first_name" required=""><br>
-                <label class="firstlabel">first name</label>
-                <input class="lastname" type="text" name="last_name" required=""><br>
-                <label class="lastlabel">last name</label>
+                <input class="firstname" type="text" name="first_name" required="" placeholder="First Name">
+                <input class="lastname" type="text" name="last_name" required="" placeholder="Last Name">
+                
             </div>
             
             <h2 class="name">
@@ -47,7 +46,7 @@
             <h2 class="name">
             Phone</h2>
             <input class="number" type="text" name="phone" required="" maxlength="10">
-            <label class="phone-number">Phone Number</label>
+            
 
              <h2 class="name">
             Seat Number</h2>

@@ -7,18 +7,42 @@
     <link rel="stylesheet" href="css/teacher_login_main.css" />
 </head>
 <body>
- 
-    <h1 align="center">Hello Teacher</h1>
-
-	<div class="header">
-        <ul>
+<header>
+        <div class="header">
+        <!-- <ol> 
+        <img src="https://i.pinimg.com/originals/19/46/9a/19469aed7f222d6009f48158a682bb9c.png">
+        </ol> -->
+        <ol> 
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+        </ol>
+          <ul> 
           <li><a href="teacher_login.php"><u>Signout</u></a></li>
-        </ul>
-      </div>
-
+          </ul>
+        </div>
+    </header>
 	<div class="container">
-    	<a href="student_list_main.html">Student's List</a><br>
-    	<a href="add_student.php">Add Student</a><br>
+  <img src="https://i.pinimg.com/originals/19/46/9a/19469aed7f222d6009f48158a682bb9c.png">
+  <h2 style="text-align:center">WELCOME TEACHER</h2>
+  <div class="t_lgn login">
+            <img style="width: 100px;" src="https://cdn-icons-png.flaticon.com/512/476/476761.png">
+            <button onclick="myOnClickFn()" > Student's List </button>
+        </div>
+        <script>
+            function myOnClickFn() {
+                document.location.href = "student_list_main.html";
+            }
+        </script>
+
+        <div class="s_lgn login">
+            <img style="width: 100px;" src="https://cdn-icons-png.flaticon.com/512/4727/4727424.png">
+            <button onclick="studentClickFn()"> Add Student </button>
+        </div>
+
+        <script>
+            function studentClickFn() {
+                document.location.href = "add_student.php";
+            }
+        </script>
     </div>
 
 </body>

@@ -10,14 +10,16 @@
 </head>
 <body>
 
-    <h1>TY Student's List</h1>
-
+<header>
     <div class="header">
-        <ul>
-          <li><a href="student_list_main.html">Previous Page</a></li>
-        </ul>
-      </div>
-
+      <ol>
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+      </ol>
+      <ul>
+        <li><a href="student_list_main.html"><u>Previous Page</u></a></li>
+      </ul>
+    </div>
+  </header>
     <?php if(mysqli_num_rows($result)){ ?>
 
 
@@ -52,7 +54,7 @@
             <td>
 
             <a href="ty_add_marks_all.php?id=<?=$rows['id']?>"
-            class="add">Add </a>
+            class="add">Add Marks </a>
             &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 
                 <a href="delete_ty.php?id=<?=$rows['id']?>" 

@@ -16,14 +16,16 @@
     </script>
 </head>
 <body>
-
-  <div class="header">
-    <ul>
-      <li><a href="sy_student_list.php"><u><--back</u></a></li>
-    </ul>
-  </div>
+<header>
+    <div class="header">
+      <ol>
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+      </ol>
+      <ul>
+      <li><a href="sy_student_list.php"><u>Previous Page</u></a></li>
+      </ul>
+    </div>
   </header>
-
   <div class="regform">
     <h1>Add SY Student marks</h1>
 </div>
@@ -42,7 +44,7 @@
              <?php 
 	            	if (isset($_GET['id']))
 	            	 {
-	            		$db = mysqli_connect('localhost','root','','fy_stud');
+	            		$db = mysqli_connect('localhost','root','','Apes');
 	            		
 					 	function validate($data)
 					 	{
