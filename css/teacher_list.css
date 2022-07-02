@@ -95,7 +95,8 @@ tr {
     cursor: pointer;
 }
 
-th,td {
+th,
+td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -116,45 +117,45 @@ th,td {
 } */
 
 
-.update{
+.update {
     text-decoration: none;
     background-color: #ff9933;
     text-shadow: 5px 5px 20px black;
-    margin:20px 0px 0px 20px;
-    text-align:center;
-    border-radius:9px;
-    border:2px;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    border-radius: 9px;
+    border: 2px;
     padding: 5px;
-    outline:none;
-    color:#f5f5f5;
-    cursor:pointer;
-    transition:0.25px;
+    outline: none;
+    color: #f5f5f5;
+    cursor: pointer;
+    transition: 0.25px;
 }
 
-.update:hover{
+.update:hover {
     background-color: #3BAF9F;
     transition: 0.25s ease;
-}  
-
-.delete{
-    text-decoration: none;
-    background-color:#ff9933;
-    text-shadow: 5px 5px 20px black;
-    margin:20px 0px 0px 20px;
-    text-align:center;
-    border-radius:9px;
-    border:2px ;
-    padding: 5px;
-    outline:none;
-    color:white;
-    cursor:pointer;
-    transition:0.25px;
 }
 
-.delete:hover{
+.delete {
+    text-decoration: none;
+    background-color: #ff9933;
+    text-shadow: 5px 5px 20px black;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    border-radius: 9px;
+    border: 2px;
+    padding: 5px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+}
+
+.delete:hover {
     background-color: red;
     transition: 0.25s ease;
-}  
+}
 
 
 @media only screen and (max-width: 768px) {
