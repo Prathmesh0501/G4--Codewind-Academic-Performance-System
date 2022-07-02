@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher's List</title>
-    <link rel="stylesheet" type="text/css" href="css/teacher_list.css">
+    <link rel="stylesheet" type="text/css" href="../css/teacher_list.css">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
     </div>
 </header>
 
-          
+          <a href="admin_login_main.html" class="back">Previous Page</a>
         
 
     <?php if(mysqli_num_rows($result)){ ?>
@@ -30,7 +30,7 @@
 
     <table>
         <tr id="header">
-            <th>Sr. No</th>
+            <th>#</th>
             <th>First name</th>
             <th>Last name</th>
             <th>Address</th>
@@ -58,13 +58,8 @@
             <td><?=$rows['qualification']?></td>
             <td><?=$rows['dept']?></td>
             <td>
-			
-                <a href="update.php?id=<?=$rows['id']?>"
-				    class="update">Update</a>
-				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp	
-					
-					
-				<a href="delete.php?id=<?=$rows['id']?>" 
+
+                <a href="delete.php?id=<?=$rows['id']?>" 
                     class="delete">Delete</a>
                 
             </td>
