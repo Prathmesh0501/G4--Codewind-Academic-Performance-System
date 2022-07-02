@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher's List</title>
-    <link rel="stylesheet" type="text/css" href="../css/teacher_list.css">
+    <link rel="stylesheet" type="text/css" href="css/teacher_list.css">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
     </div>
 </header>
 
-          <a href="admin_login_main.html" class="back">Previous Page</a>
+    
         
 
     <?php if(mysqli_num_rows($result)){ ?>
