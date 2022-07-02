@@ -16,7 +16,7 @@
         <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
       </ol>
       <ul>
-        <li><a href="student_list_main.html"><u>Previous Page</u></a></li>
+        <li><a href="add_student_marks.html"><u>Previous Page</u></a></li>
       </ul>
     </div>
   </header>

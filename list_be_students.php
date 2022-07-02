@@ -9,15 +9,16 @@
     <link rel="stylesheet" type="text/css" href="css/student_list.css">
 </head>
 <body>
-
-    <h1>BE Student's List</h1>
-
+<header>
     <div class="header">
-        <ul>
-          <li><a href="view_students_list.html">Previous Page</a></li>
-        </ul>
-      </div>
-
+      <ol>
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+      </ol>
+      <ul>
+        <li><a href="view_students_list.html"><u>Previous Page</u></a></li>
+      </ul>
+    </div>
+  </header>
     <?php if(mysqli_num_rows($result)){ ?>
 
 

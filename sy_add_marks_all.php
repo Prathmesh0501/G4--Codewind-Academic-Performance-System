@@ -16,6 +16,7 @@
     </script>
 </head>
 <body>
+
 <header>
     <div class="header">
       <ol>
@@ -26,6 +27,7 @@
       </ul>
     </div>
   </header>
+
   <div class="regform">
     <h1>Add SY Student marks</h1>
 </div>
@@ -44,7 +46,7 @@
              <?php 
 	            	if (isset($_GET['id']))
 	            	 {
-	            		$db = mysqli_connect('localhost','root','','Apes');
+	            		$con = mysqli_connect('localhost','root','','apes');
 	            		
 					 	function validate($data)
 					 	{
@@ -57,7 +59,7 @@
 						$id = validate($_GET['id']);	
 	            		$sql = "SELECT * FROM sy_stud_data WHERE id = '$id' ";
 	            	
-	            		$result = mysqli_query($db,$sql);
+	            		$result = mysqli_query($con,$sql);
      
 
 	            		if(mysqli_num_rows($result)>0)
@@ -112,7 +114,7 @@
         		
         		<div class="internal details">
 	        	
-		        	<h2 class="name">
+		        	<h2 class="sem">
 		            Semester III</h2> 
 		            <?php if (isset($_GET['error'])) { ?>
 		   <div class="alert alert-danger" role="alert">
@@ -156,7 +158,7 @@
 
 	        <div class="practical details">
 	        	
-		        	<h2 class="name">
+		        	<h2 class="sem">
 		            Semester III</h2> 
 		            
 		            <table class="marks" >
@@ -185,17 +187,13 @@
                     <td><input class="obt_marks" type="text" name="p_java" value="<?=$rows['p_java']?>"></td>
                     <td>50</td>
                 </tr>
-                <tr>
-                    <td>Mini Project 1 A</td>
-                    <td><input class="obt_marks" type="text" name="p_mini1" value="<?=$rows['p_mini1']?>" ></td>
-                    <td>50</td>
-                </tr>
+               
             </table>
 	        </div>
 
 	        <div class="theory details">
 	        	
-		        	<h2 class="name">
+		        	<h2 class="sem">
 		            Semester III</h2> 
 		            
 		            <table class="marks" >
@@ -207,27 +205,27 @@
                 <tr>
                     <td>Engineering Mathematics III</td>
                     <td><input class="obt_marks" type="text" name="te_emaths3" value="<?=$rows['te_emaths3']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Discrete Structures and Graph Theory</td>
                     <td><input class="obt_marks" type="text" name="te_dsgt" value="<?=$rows['te_dsgt']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Data Structure</td>
                     <td><input class="obt_marks" type="text" name="te_ds" value="<?=$rows['te_ds']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Digital Logic & Computer Architecture</td>
                     <td><input class="obt_marks" type="text" name="te_dlca" value="<?=$rows['te_dlca']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Computer Graphics</td>
                     <td><input class="obt_marks" type="text" name="te_cg" value="<?=$rows['te_cg']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
             </table>
 	        </div>
@@ -253,7 +251,7 @@
         		
         		<div class="internal detailed">
 	        	
-		            <h2 class="name">
+		            <h2 class="sem">
 		            Semester IV</h2> 
 		            
 		            <table class="marks" >
@@ -269,12 +267,12 @@
                 </tr>
                 <tr>
                     <td>Analysis of Algorithm</td>
-                    <td><input class="obt_marks" type="text" name="in_aa" value="<?=$rows['in_aa']?>"></td>
+                    <td><input class="obt_marks" type="text" name="in_aoa" value="<?=$rows['in_aoa']?>"></td>
                     <td>20</td>
                 </tr>
                 <tr>
                     <td>Database Management System</td>
-                    <td><input class="obt_marks" type="text" name="in_dms" value="<?=$rows['in_dms']?>"></td>
+                    <td><input class="obt_marks" type="text" name="in_dbms" value="<?=$rows['in_dbms']?>"></td>
                     <td>20</td>
                 </tr>
                 <tr>
@@ -292,7 +290,7 @@
 
 	        <div class="practical detailed">
 	      
-		           <h2 class="name">
+		           <h2 class="sem">
 		            Semester IV</h2> 
 		            
 		            <table class="marks" >
@@ -303,12 +301,12 @@
                 </tr>
                 <tr>
                     <td>Analysis of Algorithm</td>
-                    <td><input class="obt_marks" type="text" name="p_aa" value="<?=$rows['p_aa']?>"></td>
+                    <td><input class="obt_marks" type="text" name="p_aoa" value="<?=$rows['p_aoa']?>"></td>
                     <td>50</td>
                 </tr>
                 <tr>
                     <td>Database Management System</td>
-                    <td><input class="obt_marks" type="text" name="p_dms" value="<?=$rows['p_dms']?>"></td>
+                    <td><input class="obt_marks" type="text" name="p_dbms" value="<?=$rows['p_dbms']?>"></td>
                     <td>50</td>
                 </tr>
                 <tr>
@@ -323,20 +321,16 @@
                 </tr>
                 <tr>
                     <td>Python Programming</td>
-                    <td><input class="obt_marks" type="text" name="p_py" value="<?=$rows['p_py']?>"></td>
+                    <td><input class="obt_marks" type="text" name="p_python" value="<?=$rows['p_python']?>"></td>
                     <td>50</td>
                 </tr>
-                <tr>
-                    <td>Mini Project 1 B</td>
-                    <td><input class="obt_marks" type="text" name="p_mini2" value="<?=$rows['p_mini2']?>"></td>
-                    <td>50</td>
-                </tr>
+                
             </table>
 	        </div>
 
 	        <div class="theory detailed">
 	        	
-		           <h2 class="name">
+		           <h2 class="sem">
 		            Semester IV</h2> 
 		            
 		            <table class="marks" >
@@ -348,27 +342,27 @@
                 <tr>
                     <td>Engineering Mathematics IV</td>
                     <td><input class="obt_marks" type="text" name="te_emaths4" value="<?=$rows['te_emaths4']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Analysis of Algorithm</td>
-                    <td><input class="obt_marks" type="text" name="te_aa" value="<?=$rows['te_aa']?>"></td>
-                    <td>75</td>
+                    <td><input class="obt_marks" type="text" name="te_aoa" value="<?=$rows['te_aoa']?>"></td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Database Management System</td>
-                    <td><input class="obt_marks" type="text" name="te_dms" value="<?=$rows['te_dms']?>"></td>
-                    <td>75</td>
+                    <td><input class="obt_marks" type="text" name="te_dbms" value="<?=$rows['te_dbms']?>"></td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Operating System</td>
                     <td><input class="obt_marks" type="text" name="te_os" value="<?=$rows['te_os']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Microprocessor</td>
                     <td><input class="obt_marks" type="text" name="te_mp" value="<?=$rows['te_mp']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
             </table>
 	        </div>

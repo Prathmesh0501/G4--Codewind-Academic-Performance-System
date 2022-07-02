@@ -26,6 +26,7 @@
       </ul>
     </div>
   </header>
+
   <div class="regform">
     <h1>Add FY Student marks</h1>
 </div>
@@ -111,7 +112,7 @@
         		
         		<div class="internal details">
 	        	
-		        	<h2 class="name">
+		        	<h2 class="sem">
 		            Semester I</h2> 
 		            <?php if (isset($_GET['error'])) { ?>
 		   <div class="alert alert-danger" role="alert">
@@ -155,7 +156,7 @@
 
 	        <div class="practical details">
 	        	
-		        	<h2 class="name">
+		        	<h2 class="sem">
 		            Semester I</h2> 
 		            
 		            <table class="marks" >
@@ -163,11 +164,6 @@
 		                    <th>Subject</th>
 		                    <th>Obtained Marks.</th>
 		                    <th>Out of Marks(total)</th>
-		                </tr>
-		                <tr>
-		                    <td>Engineering Mathematics-I</td>
-		                    <td><input class="obt_marks" type="text" name="p_emaths1" value="<?=$rows['p_emaths1']?>"></td>
-		                    <td>50</td>
 		                </tr>
 		                <tr>
 		                    <td>Engineering Physics-I</td>
@@ -189,12 +185,17 @@
 		                    <td><input class="obt_marks" type="text" name="p_bee" value="<?=$rows['p_bee']?>"></td>
 		                    <td>50</td>
 		                </tr>
+						<tr>
+		                    <td>Basic Workshop-I</td>
+		                    <td><input class="obt_marks" type="text" name="p_workshop1" value="<?=$rows['p_workshop1']?>"></td>
+		                    <td>50</td>
+		                </tr>
 		            </table>
 	        </div>
 
 	        <div class="theory details">
 	        	
-		        	<h2 class="name">
+		        	<h2 class="sem">
 		            Semester I</h2> 
 		            
 		            <table class="marks" >
@@ -252,7 +253,7 @@
         		
         		<div class="internal detailed">
 	        	
-		            <h2 class="name">
+		            <h2 class="sem">
 		            Semester II</h2> 
 		            
 		            <table class="marks" >
@@ -278,17 +279,12 @@
 		                </tr>
 		                <tr>
 		                    <td>Engineering Graphics</td>
-		                    <td><input class="obt_marks" type="text" name="in_eg" value="<?=$rows['in_eg']?>"></td>
+		                    <td><input class="obt_marks" type="text" name="in_egraph" value="<?=$rows['in_egraph']?>"></td>
 		                    <td>20</td>
 		                </tr>
 						 <tr>
 		                    <td>C programming</td>
-		                    <td><input class="obt_marks" type="text" name="in_cp" value="<?=$rows['in_cp']?>"></td>
-		                    <td>20</td>
-		                </tr>
-		                <tr>
-		                    <td>Professional Communication and Ethics- I</td>
-		                    <td><input class="obt_marks" type="text" name="in_pce1" value="<?=$rows['in_pce1']?>"></td>
+		                    <td><input class="obt_marks" type="text" name="in_c" value="<?=$rows['in_c']?>"></td>
 		                    <td>20</td>
 		                </tr>
 		            </table>
@@ -296,7 +292,7 @@
 
 	        <div class="practical detailed">
 	      
-		           <h2 class="name">
+		           <h2 class="sem">
 		            Semester II</h2> 
 		            
 		            <table class="marks" >
@@ -305,11 +301,7 @@
 		                    <th>Obtained Marks.</th>
 		                    <th>Out of Marks(total)</th>
 		                </tr>
-		                <tr>
-		                    <td>Engineering Mathematics-II</td>
-		                    <td><input class="obt_marks" type="text" name="p_emaths2" value="<?=$rows['p_emaths2']?>"></td>
-		                    <td>50</td>
-		                </tr>
+		               
 		                <tr>
 		                    <td>Engineering Physics-II</td>
 		                    <td><input class="obt_marks" type="text" name="p_ephy2" value="<?=$rows['p_ephy2']?>"></td>
@@ -322,17 +314,17 @@
 		                </tr>
 		                <tr>
 		                    <td>Engineering Graphics</td>
-		                    <td><input class="obt_marks" type="text" name="p_eg" value="<?=$rows['p_eg']?>"></td>
+		                    <td><input class="obt_marks" type="text" name="p_egraph" value="<?=$rows['p_egraph']?>"></td>
 		                    <td>50</td>
 		                </tr>
 						<tr>
 		                    <td>C programming</td>
-		                    <td><input class="obt_marks" type="text" name="p_cp" value="<?=$rows['p_cp']?>"></td>
+		                    <td><input class="obt_marks" type="text" name="p_c" value="<?=$rows['p_c']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		                <tr>
-		                    <td>Professional Communication and Ethics- I</td>
-		                    <td><input class="obt_marks" type="text" name="p_pce1" value="<?=$rows['p_pce1']?>"></td>
+		                    <td>Basic Workshop- II</td>
+		                    <td><input class="obt_marks" type="text" name="p_workshop2" value="<?=$rows['p_workshop2']?>"></td>
 		                    <td>50</td>
 		                </tr>
 		            </table> 
@@ -340,7 +332,7 @@
 
 	        <div class="theory detailed">
 	        	
-		           <h2 class="name">
+		           <h2 class="sem">
 		            Semester II</h2> 
 		            
 		            <table class="marks" >
@@ -366,17 +358,12 @@
 		                </tr>
 		                <tr>
 		                    <td>Engineering Graphics</td>
-		                    <td><input class="obt_marks" type="text" name="te_eg" value="<?=$rows['te_eg']?>"></td>
+		                    <td><input class="obt_marks" type="text" name="te_egraph" value="<?=$rows['te_egraph']?>"></td>
 		                    <td>80</td>
 		                </tr>
 						<tr>
 		                    <td>C programming</td>
-		                    <td><input class="obt_marks" type="text" name="te_cp" value="<?=$rows['te_cp']?>"></td>
-		                    <td>80</td>
-		                </tr>
-		                <tr>
-		                    <td>Professional Communication and Ethics- I</td>
-		                    <td><input class="obt_marks" type="text" name="te_pce1" value="<?=$rows['te_pce1']?>"></td>
+		                    <td><input class="obt_marks" type="text" name="te_c" value="<?=$rows['te_c']?>"></td>
 		                    <td>80</td>
 		                </tr>
 		            </table>  

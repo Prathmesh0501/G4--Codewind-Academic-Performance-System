@@ -10,21 +10,30 @@
     <link rel="stylesheet" href="css/student_login.css" />
   </head>
   <body>
-    <header>
+  <header>
+    <div class="header">
+      <ol>
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+      </ol>
+      <ul>
+        <li><a href="student_login_main.html"><u>Previous Page</u></a></li>
+      </ul>
+    </div>
+  </header>
       
     <form class="box" action="fy_student_login_php.php" method="POST">
-      <h1>First Year </h1>
-	  <h1>Student Login</h1>
+    <img style="width: 100px;" src="https://cdn-icons-png.flaticon.com/512/201/201818.png">
+      <h1>First Year Student Login </h1>
+	  
 
        <?php if (isset($_GET['error'])) { ?>
         <p class="error"><?php echo $_GET['error']; ?></p>
       <?php } ?>
       <input type="text" name="seat_no" placeholder="Seat Number" />
       <!--<input type="password" name="" placeholder="Password" />-->
-      <input type="submit" value="Login" name="submit" />
+      <button class="submit-btn">Login</button>
+      <!-- <input type="submit" value="Login" name="submit" /> -->
     </form>
-    <div class="loginpage">
-        <a href="student_login_main.html">Previous Page</a>
-    </div>
+   
   </body>
 </html>

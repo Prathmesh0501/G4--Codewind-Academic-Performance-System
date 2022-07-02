@@ -9,12 +9,16 @@
 <body>
 
     
-      <div class="header">
-        <ul>
-          <li><a href="teacher.html">Previous Page</a></li>
-        </ul>
-      </div>
-
+<header>
+    <div class="header">
+    <ol> 
+    <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+    </ol>
+      <ul> 
+      <li><a href="teacher.html">Previous Page</a></li>
+      </ul>
+    </div>
+</header>
 
     
     <div class="regform">

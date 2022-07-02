@@ -9,9 +9,12 @@
 
 <header>
         <div class="header">
-          <ul>
+        <ol> 
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+        </ol>
+          <ul> 
             <li><a href="main.php">Home</a></li>
-            <li><a href="login_main.php">Login</a></li>
+            <li ><a href="login_main.php">Login</a></li>
             <li><a href="about.php">About</a></li>
             <li class="active"><a href="contact.php">Contact</a></li>
           </ul>
@@ -19,11 +22,11 @@
     </header>
 
 
-<h3>Contact US</h3>
 
 <div class="container">
+<h3>Contact US</h3>
   <form method="post">
-
+    
     <label for="fname">First Name*</label>
     <input type="text" id="fname" name="first_name" placeholder="Your name.." required="">
 

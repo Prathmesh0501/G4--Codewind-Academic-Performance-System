@@ -24,6 +24,7 @@
         </div>
     </header>
     <form class="box" action="teacher_log.php" method="post">
+    <img style="width: 100px;" src="https://i.pinimg.com/originals/19/46/9a/19469aed7f222d6009f48158a682bb9c.png">
       <h1>Teacher Login</h1>
 
       <input type="text" name="email" placeholder="Email_ID"  />
@@ -36,8 +37,8 @@
       <?php } ?>
 
     </form>
-    <!-- <div class="loginpage">
+    <div class="loginpage">
         <a href="login_main.php">Back to Login Page</a>
-    </div> -->
+    </div>
   </body>
 </html>

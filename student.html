@@ -4,22 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin's Page</title>
-    <link rel="stylesheet" href="css/admin_login_main.css" />
+    <link rel="stylesheet" href="css/student.css" />
 </head>
 <body>
-
-    <h1 align="center">Student's Page</h1>
-
+  <header>
     <div class="header">
-        <ul>
-          <li><a href="admin_login_main.html"><u>Previous Page</u></a></li>
-        </ul>
-      </div>
+    <ol> 
+    <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+    </ol>
+      <ul> 
+        <li><a href="admin_login_main.html"><u>Previous Page</u></a></li>
+      </ul>
+    </div>
+</header>
 
 	<div class="container">
-    	<a href="student_list_main.html">Students's List</a><br>
-		<a href="add_student.php">Add Student</a>
+    <img style="width: 100px;" src="https://cdn-icons-png.flaticon.com/512/201/201818.png">
+      <h2>Student's Section</h2>
+      <button onclick="studentList_fn()">Student's List </button>
+      <button onclick="addStudent_fn()">Add Student </button>
+      
     </div>
+
+    <script>
+      function studentList_fn(){
+        document.location.href = "student_list_main.html"
+      }
+    </script>
+
+<script>
+  function addStudent_fn(){
+    document.location.href = "add_student.php"
+  }
+</script>
 
     
 

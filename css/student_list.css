@@ -62,7 +62,7 @@ table {
     background-color: rgba(232, 236, 232, 0.836);
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 50%;
     transform: translate(-50%, -50%);
     border-collapse: collapse;
     width: 1200px;
@@ -73,7 +73,7 @@ table {
 
 tr {
     transition: all 0.2s ease-in;
-    cursor: pointer;
+   
 }
 
 th,td {
@@ -90,11 +90,11 @@ th,td {
 
 
 
-tr:hover {
-    background-color: rgb(233, 211, 106);
+/* tr:hover {
+    background-color: rgb(114, 112, 101);
     transform: scale(1.02);
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
 
 .add{

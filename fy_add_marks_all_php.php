@@ -35,47 +35,47 @@
         return $data;
 	}
 
-		$seat_no	= validate($_POST['seat_no']);
-		$in_ip 		= validate($_POST['in_ip']);
-		$in_de		= validate($_POST['in_de']);
-		$in_dm 		= validate($_POST['in_dm']);
-		$in_cs 		= validate($_POST['in_cs']);
-		$in_os 		= validate($_POST['in_os']);
+		$seat_no		= validate($_POST['seat_no']);
+		$in_emaths1 	= validate($_POST['in_emaths1']);
+		$in_ephy1		= validate($_POST['in_ephy1']);
+		$in_echem1 		= validate($_POST['in_echem1']);
+		$in_emech 		= validate($_POST['in_emech']);
+		$in_bee 		= validate($_POST['in_bee']);
 
-		$p_ip 		= validate($_POST['p_ip']);
-		$p_de 		= validate($_POST['p_de']);
-		$p_dm 		= validate($_POST['p_dm']);
-		$p_cs 		= validate($_POST['p_cs']);
-		$p_os 		= validate($_POST['p_os']);
+		$p_ephy1 		= validate($_POST['p_ephy1']);
+		$p_echem1 		= validate($_POST['p_echem1']);
+		$p_emech 		= validate($_POST['p_emech']);
+		$p_bee 			= validate($_POST['p_bee']);
+		$p_workshop1	= validate($_POST['p_bee']);
 
-		$te_ip 		= validate($_POST['te_ip']);
-		$te_de 		= validate($_POST['te_de']);
-		$te_dm 		= validate($_POST['te_dm']);
-		$te_cs 		= validate($_POST['te_cs']);
-		$te_os 		= validate($_POST['te_os']);
+		$te_emaths1 	= validate($_POST['te_emaths1']);
+		$te_ephy1 		= validate($_POST['te_ephy1']);
+		$te_echem1 		= validate($_POST['te_echem1']);
+		$te_emech 		= validate($_POST['te_emech']);
+		$te_bee 		= validate($_POST['te_bee']);
 
-		$in_oops 	= validate($_POST['in_oops']);
-		$in_mi		= validate($_POST['in_mi']);
-		$in_wb 		= validate($_POST['in_wb']);
-		$in_nm 		= validate($_POST['in_nm']);
-		$in_gc 		= validate($_POST['in_gc']);
+		$in_emaths2 	= validate($_POST['in_emaths2']);
+		$in_ephy2		= validate($_POST['in_ephy2']);
+		$in_echem2 		= validate($_POST['p_echem2']);
+		$in_egraph 		= validate($_POST['in_egraph']);
+		$in_c 		    = validate($_POST['in_c']);
 
-		$p_oops 	= validate($_POST['p_oops']);
-		$p_mi 		= validate($_POST['p_mi']);
-		$p_wb 		= validate($_POST['p_wb']);
-		$p_nm 		= validate($_POST['p_nm']);
-		$p_gc 		= validate($_POST['p_gc']);
+		$p_ephy2 		= validate($_POST['p_ephy2']);
+		$p_echem2 		= validate($_POST['p_echem2']);
+		$p_egraph 	 	= validate($_POST['p_egraph']);
+		$p_c 			= validate($_POST['p_c']);
+		$p_workshop2 	= validate($_POST['p_workshop2']);
 
-		$te_oops 	= validate($_POST['te_oops']);
-		$te_mi 		= validate($_POST['te_mi']);
-		$te_wb 		= validate($_POST['te_wb']);
-		$te_nm 		= validate($_POST['te_nm']);
-		$te_gc 		= validate($_POST['te_gc']);
+		$te_emaths2 	= validate($_POST['te_emaths2']);
+		$te_ephy2 		= validate($_POST['te_ephy2']);
+		$te_echem2 		= validate($_POST['te_echem2']);
+		$te_egraph 		= validate($_POST['te_egraph']);
+		$te_c 			= validate($_POST['te_c']);
 
 		$id 		= validate($_POST['id']);
 
-		$sql = "UPDATE fy_stud_data SET seat_no='$seat_no', in_ip='$in_ip',in_de='$in_de',in_dm='$in_dm',in_cs='$in_cs',in_os='$in_os',p_ip='$p_ip',p_de='$p_de',p_dm='$p_dm',p_cs='$p_cs',p_os='$p_os',te_ip='$te_ip',te_de='$te_de',te_dm='$te_dm',te_cs='$te_cs',te_os='$te_os',in_oops='$in_oops',in_mi='$in_mi',in_wb='$in_wb',in_nm='$in_nm',in_gc='$in_gc',p_oops='$p_oops',p_mi='$p_mi',p_wb='$p_wb',p_nm='$p_nm',p_gc='$p_gc',te_oops='$te_oops',te_mi='$te_mi',te_wb='$te_wb',te_nm='$te_nm',te_gc='$te_gc' WHERE seat_no='$seat_no'";
-		$result2 = mysqli_query($db,$sql);
+		$sql = "UPDATE fy_stud_data SET seat_no='$seat_no', in_emaths1='$in_emaths1',in_ephy1='$in_ephy1',in_echem1='$in_echem1',in_emech='$in_emech',in_bee='$in_bee',p_echem1='$p_echem1',p_ephy1='$p_ephy1',p_emech='$p_emech',p_bee='$p_bee',p_workshop1='$p_workshop1',te_emaths1='$te_emaths1',te_ephy1='$te_ephy1',te_echem1='$te_echem1',te_emech='$te_emech',te_bee='$te_bee',in_emaths2='$in_emaths2',in_ephy2='$in_ephy2',in_echem2='$in_echem2',in_egraph='$in_egraph',in_c='$in_c',p_ephy2='$p_ephy2',p_echem2='$p_echem2',p_egraph 	='$p_egraph',p_c='$p_c',p_workshop2='$p_workshop2',te_emaths2='$te_emaths2',te_ephy2='$te_ephy2',te_echem2='$te_echem2',te_egraph='$te_egraph',te_c='$te_c' WHERE seat_no='$seat_no'";
+		$result2 = mysqli_query($con,$sql);
 		if($result2)
 		{
 

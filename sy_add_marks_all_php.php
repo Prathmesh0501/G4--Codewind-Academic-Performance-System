@@ -15,7 +15,7 @@
 
 		$id = validate($_GET['id']);
 		$sql = "SELECT * FROM sy_stud_data WHERE id=$id";
-	    $result = mysqli_query($db, $sql);
+	    $result = mysqli_query($con, $sql);
 
 	    if (mysqli_num_rows($result) > 0) 
 	    {
@@ -37,47 +37,48 @@
 
 		$seat_no	= validate($_POST['seat_no']);
 		
-		$in_py 		= validate($_POST['in_py']);
-		$in_ds		= validate($_POST['in_ds']);
-		$in_cn 		= validate($_POST['in_cn']);
-		$in_dbms 	= validate($_POST['in_dbms']);
-		$in_am 		= validate($_POST['in_am']);
-
-		$p_py 		= validate($_POST['p_py']);
-		$p_ds 		= validate($_POST['p_ds']);
-		$p_cn 		= validate($_POST['p_cn']);
-		$p_dbms 	= validate($_POST['p_dbms']);
-		$p_am 		= validate($_POST['p_am']);
-
-		$te_py 		= validate($_POST['te_py']);
-		$te_ds 		= validate($_POST['te_ds']);
-		$te_cn 		= validate($_POST['te_cn']);
-		$te_dbms 	= validate($_POST['te_dbms']);
-		$te_am 		= validate($_POST['te_am']);
-
-		$in_java 	= validate($_POST['in_java']);
-		$in_em		= validate($_POST['in_em']);
-		$in_se 		= validate($_POST['in_se']);
+		$in_emaths3 = validate($_POST['in_emaths3']);
+		$in_dsgt	= validate($_POST['in_dsgt']);
+		$in_ds 		= validate($_POST['in_ds']);
+		$in_dlca 	= validate($_POST['in_dlca']);
 		$in_cg 		= validate($_POST['in_cg']);
-		$in_cost 	= validate($_POST['in_cost']);
+
+		
+		$p_ds 		= validate($_POST['p_ds']);
+		$p_dlca 	= validate($_POST['p_dlca']);
+		$p_cg 		= validate($_POST['p_cg']);
+		$p_java 	= validate($_POST['p_java']);
+
+		$te_emaths3 	= validate($_POST['te_emaths3']);
+		$te_dsgt 	= validate($_POST['te_dsgt']);
+		$te_ds 		= validate($_POST['te_ds']);
+		$te_dlca 	= validate($_POST['te_dlca']);
+		$te_cg 		= validate($_POST['te_cg']);
+
+		$in_emaths4 = validate($_POST['in_emaths4']);
+		$in_aoa		= validate($_POST['in_aoa']);
+		$in_dbms 		= validate($_POST['in_dbms']);
+		$in_os 		= validate($_POST['in_os']);
+		$in_mp 	= validate($_POST['in_mp']);
 
 		$p_java 	= validate($_POST['p_java']);
-		$p_em 		= validate($_POST['p_em']);
-		$p_se 		= validate($_POST['p_se']);
-		$p_cg 		= validate($_POST['p_cg']);
-		$p_cost 	= validate($_POST['p_cost']);
+		$p_aoa 		= validate($_POST['p_aoa']);
+		$p_dbms 		= validate($_POST['p_dbms']);
+		$p_os 		= validate($_POST['p_os']);
+		$p_mp 	= validate($_POST['p_mp']);
+		$p_python 	= validate($_POST['p_python']);
 
-		$te_java 	= validate($_POST['te_java']);
-		$te_em 		= validate($_POST['te_em']);
-		$te_se 		= validate($_POST['te_se']);
-		$te_cg 		= validate($_POST['te_cg']);
-		$te_cost 	= validate($_POST['te_cost']);
+		$te_emaths4 	= validate($_POST['te_emaths4']);
+		$te_aoa 		= validate($_POST['te_aoa']);
+		$te_dbms 		= validate($_POST['te_dbms']);
+		$te_os 		= validate($_POST['te_os']);
+		$te_mp 	= validate($_POST['te_mp']);
 
 		$id 		= validate($_POST['id']);
 
-		$sql = "UPDATE sy_stud_data SET seat_no='$seat_no', in_py='$in_py', in_ds='$in_ds', in_cn='$in_cn',in_dbms='$in_dbms', in_am='$in_am', p_py='$p_py', p_ds='$p_ds', p_cn='$p_cn', p_dbms='$p_dbms', p_am='$p_am',te_py='$te_py', te_ds='$te_ds', te_cn='$te_cn',te_dbms='$te_dbms',te_am='$te_am',in_java='$in_java',in_em='$in_em',in_se='$in_se',in_cg='$in_cg',in_cost='$in_cost',p_java='$p_java',p_em='$p_em',p_se='$p_se',p_cg='$p_cg',p_cost='$p_cost',te_java='$te_java',te_em='$te_em',te_se='$te_se',te_se='$te_se',te_cg='$te_cg',te_cost='$te_cost' WHERE seat_no='$seat_no'";
+		$sql = "UPDATE sy_stud_data SET seat_no='$seat_no', in_emaths3='$in_emaths3', in_dsgt='$in_dsgt', in_ds='$in_ds',in_dlca='$in_dlca', in_cg='$in_cg',  p_ds='$p_ds', p_dlca='$p_dlca', p_cg='$p_cg',te_emaths3='$te_emaths3', te_dsgt='$te_dsgt', te_ds='$te_ds',te_dlca='$te_dlca',te_cg='$te_cg',in_emaths4='$in_emaths4',in_aoa='$in_aoa',in_dbms='$in_dbms',in_cg='$in_os',in_mp='$in_mp',p_java='$p_java',p_aoa='$p_aoa',p_dbms='$p_dbms',p_cg='$p_cg',p_mp='$p_mp',p_python='$p_python',te_emaths4='$te_emaths4',te_aoa='$te_aoa',te_dbms='$te_dbms',te_dbms='$te_dbms',te_os='$te_os',te_mp='$te_mp' WHERE seat_no='$seat_no'";
 
-		$result2 = mysqli_query($db,$sql);
+		$result2 = mysqli_query($con,$sql);
 		if($result2)
 		{
 

@@ -11,13 +11,16 @@
 </head>
 <body>
 
-    <h1>Teacher's List</h1>
-	<div class="header">
-	   	<ul>
-	      <li><a href="teacher.html">Previous Page</a></li>
-	    </ul>
-	  </div>
-	  </header>
+<header>
+    <div class="header">
+    <ol> 
+    <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+    </ol>
+      <ul> 
+      <li><a href="teacher.html">Previous Page</a></li>
+      </ul>
+    </div>
+</header>
 
           
         

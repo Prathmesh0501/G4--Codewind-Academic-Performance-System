@@ -9,11 +9,15 @@
     <script type="text/javascript"></script>
 </head>
 <body>
-   <div class="title">
-    <h1 align="center">Third Year Performance Report</h1>
-   </div>
-
-     <a href="ty_student_login.php">Logout</a>
+<div class="header">
+      <ol>
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+      </ol>
+      <ul>
+      <a href="ty_student_login.php">Logout</a>
+      </ul>
+    </div>
+  </header>
 
    <?php
 
@@ -22,7 +26,7 @@
      $seat_no = 'seat_no';
 
      $sql = "SELECT * FROM ty_stud_data WHERE seat_no='".$_SESSION['seat_no']."'";
-     $result1 = mysqli_query($db,$sql);
+     $result1 = mysqli_query($con,$sql);
 
      while ($row = mysqli_fetch_array($result1))
       {
@@ -34,7 +38,7 @@
     ?>
 
 
-    <h3>Course : <b>B.Sc.IT</b></h3>
+    <h3>Course : <b>BE Comps</b></h3>
    <h3>Select Semester : </h3>
       
       <div class="semlist">
@@ -53,7 +57,7 @@ $count1 = 0;
 
 $seat_no='seat_no';
  $sql2="SELECT * FROM `ty_stud_data` WHERE seat_no='".$_SESSION['seat_no']."'";
-$run2=mysqli_query($db,$sql2);
+$run2=mysqli_query($con,$sql2);
  
  if(mysqli_num_rows($run2)>0)
 {
@@ -73,7 +77,7 @@ $data2=mysqli_fetch_assoc($run2);
          		<th colspan="3">SE</th>
          		<th colspan="3">CN</th>
          		<th colspan="3">DWM</th>
-         		<th colspan="3">OC1</th>   
+         		<th colspan="3">IP</th>   
          	</tr>
          	<tr>
          		<!--TCS-->
@@ -187,23 +191,23 @@ $data2=mysqli_fetch_assoc($run2);
                   }
                ?>
          		<!--OC1-->
-         		<td><?php echo $data2['in_oc1'];?></td>
+         		<td><?php echo $data2['in_ip'];?></td>
                <?php
-                  if ($data2['in_oc1']>=10) 
+                  if ($data2['in_ip']>=10) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['te_oc1'];?></td>
+         		<td><?php echo $data2['te_ip'];?></td>
                <?php
-                  if ($data2['te_oc1']>=30) 
+                  if ($data2['te_ip']>=30) 
                   {
                      $count++;
                   }
                ?>
-         		<td><?php echo $data2['p_oc1'];?></td>
+         		<td><?php echo $data2['p_ip'];?></td>
                <?php
-                  if ($data2['p_oc1']>=20) 
+                  if ($data2['p_ip']>=20) 
                   {
                      $count++;
                   }
@@ -223,12 +227,12 @@ $data2=mysqli_fetch_assoc($run2);
                <td colspan="2"><?php echo $total4=$data2['in_dwm']+$data2['te_dwm']; ?></td>
                <td></td>
                <!--OC1-->
-               <td colspan="2"><?php echo $total5=$data2['in_oc1']+$data2['te_oc1']; ?></td>
+               <td colspan="2"><?php echo $total5=$data2['in_ip']+$data2['te_ip']; ?></td>
                <td></td>    
             </tr>
             <tr>
                <th>Total Marks</th>
-               <td colspan="14"><?php echo $all=$total1+$data2['p_tcs']+$total2+$data2['p_se']+$total3+$data2['p_cn']+$total4+$data2['p_dwm']+$total5+$data2['p_oc1'] ; ?>/750</td>
+               <td colspan="14"><?php echo $all=$total1+$data2['p_tcs']+$total2+$data2['p_se']+$total3+$data2['p_cn']+$total4+$data2['p_dwm']+$total5+$data2['p_ip'] ; ?>/750</td>
             </tr>
             <tr>
                <th>Grade</th>
@@ -313,7 +317,8 @@ $data2=mysqli_fetch_assoc($run2);
                <th colspan="3">CSS</th>
                <th colspan="3">MC</th>
                <th colspan="3">AI</th>
-               <th colspan="3">OC2</th>   
+               <th colspan="2">IOT</th> 
+			   <th colspan="1">SBLC</th> 			   
             </tr>
             <tr>
                <!--SPCC-->
@@ -332,9 +337,10 @@ $data2=mysqli_fetch_assoc($run2);
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
-               <!--OC2-->
+               <!--IOT-->
                <th>Int</th>
                <th>Ext</th>
+			   <!--SBLC-->
                <th>Pract</th>
             </tr>
             <tr>
@@ -427,24 +433,26 @@ $data2=mysqli_fetch_assoc($run2);
                      $count1++;
                   }
                ?>
-               <!--OC2-->
-               <td><?php echo $data2['in_oc2'];?></td>
+               <!--iot-->
+               <td><?php echo $data2['in_iot'];?></td>
                <?php
-                  if ($data2['in_oc2']>=10) 
+                  if ($data2['in_iot']>=10) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['te_oc2'];?></td>
+               <td><?php echo $data2['te_iot'];?></td>
                <?php
-                  if ($data2['te_oc2']>=30) 
+                  if ($data2['te_iot']>=30) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_oc2'];?></td>
+              
+			   <!--sblc-->
+			   <td><?php echo $data2['p_sblc'];?></td>
                <?php
-                  if ($data2['p_oc2']>=20) 
+                  if ($data2['p_sblc']>=20) 
                   {
                      $count1++;
                   }
@@ -463,13 +471,13 @@ $data2=mysqli_fetch_assoc($run2);
                <!--AI-->
                <td colspan="2"><?php echo $total9=$data2['in_ai']+$data2['te_ai']; ?></td>
                <td></td>
-               <!--OC2-->
-               <td colspan="2"><?php echo $total10=$data2['in_oc2']+$data2['te_oc2']; ?></td>
+               <!--iot-->
+               <td colspan="2"><?php echo $total10=$data2['in_iot']+$data2['te_iot']; ?></td>
                <td></td>    
             </tr>
             <tr>
                <th>Total Marks</th>
-               <td colspan="14"><?php echo $all=$total6+$data2['p_spcc']+$total7+$data2['p_css']+$total8+$data2['p_mc']+$total9+$data2['p_ai']+$total10+$data2['p_oc2'] ; ?>/750</td>
+               <td colspan="14"><?php echo $all=$total6+$data2['p_spcc']+$total7+$data2['p_css']+$total8+$data2['p_mc']+$total9+$data2['p_ai']+$total10+$data2['p_sblc'] ; ?>/750</td>
             </tr>
             <tr>
                <th>Grade</th>

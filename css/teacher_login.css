@@ -62,7 +62,7 @@ ul li.active a {
 .box {
   background-color: rgba(232, 236, 232, 0.836);
   padding: 30px;
-  margin: 5% auto;
+  margin: 48px auto;
   width: 30%;
   border-radius: 10px;
   border-style: solid;
@@ -76,7 +76,7 @@ ul li.active a {
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 
@@ -98,7 +98,7 @@ ul li.active a {
 .box input[type="text"]:focus,
 .box input[type="password"]:focus {
   width: 280px;
-  border-color: #91b9ea;
+
 
 }
 
@@ -117,25 +117,20 @@ ul li.active a {
   cursor: pointer;
 }
 
-.box input[type="submit"]:hover {
-  background: rgb(233, 211, 106);
-}
+
 
 .loginpage a {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  text-align: center;
+  font-family: cursive;
   text-decoration: none;
-  color: #fff;
   padding: 15px 20px;
-  text-shadow: 5px 5px 5px black;
-  /*border: 1px solid transparent;*/
-  transition: 0.6s ease;
+  font-size: 20px;
+  color: black;
 }
 
 .loginpage a:hover {
-  color: rgb(233, 211, 106);
+  color: rgb(32, 146, 146);
 }
 
 .error {
@@ -160,4 +155,9 @@ ul li.active a {
 
 .submit-btn:hover {
   background-color: #91b9ea;
+}
+
+img{
+  display: block;
+  margin: 0px auto;
 }

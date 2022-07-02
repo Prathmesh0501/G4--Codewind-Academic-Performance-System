@@ -16,7 +16,7 @@
 
 		 $sql_E = "SELECT * FROM ty_stud_data WHERE seat_no = '$seat_no' ";
 
-	$result = mysqli_query($db,$sql_E);
+	$result = mysqli_query($con,$sql_E);
 
 	if(mysqli_num_rows($result)>0)
 	{
@@ -28,7 +28,7 @@
 
 	
 		$query = "INSERT INTO ty_stud_data(first_name, last_name, address, email, phone, seat_no ) VALUES('$firstname','$lastname','$address','$email','$phonenumber','$seat_no')";
-		$result2 = mysqli_query($db,$query);
+		$result2 = mysqli_query($con,$query);
 		if($result2)
 		{
 

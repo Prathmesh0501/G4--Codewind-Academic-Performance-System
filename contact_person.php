@@ -8,13 +8,16 @@
 </head>
 <body>
 
-    <h1>Contacted Details</h1>
-
+<header>
     <div class="header">
-        <ul>
-          <li><a href="admin_login_main.html">Previous Page</a></li>
-        </ul>
-      </div>
+      <ol>
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+      </ol>
+      <ul>
+        <li><a href="admin_login_main.html"><u>Previous Page</u></a></li>
+      </ul>
+    </div>
+  </header>
       <?php
             $con=mysqli_connect('localhost','root','','apes');
             $sql="SELECT * FROM `contact`";

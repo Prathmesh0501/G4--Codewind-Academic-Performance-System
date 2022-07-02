@@ -10,10 +10,15 @@
     <script type="text/javascript"></script>
 </head>
 <body>
-   <div class="title">
-    <h1 align="center">First Year Performance Report</h1>
-   </div>
-    <a href="fy_student_login.php">Logout</a>
+<div class="header">
+      <ol>
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+      </ol>
+      <ul>
+      <a href="fy_student_login.php">Logout</a>
+      </ul>
+    </div>
+  </header>
 
     <?php
 
@@ -50,7 +55,7 @@
 <?php
 
 $count = 0;
-$count1 = 0;
+$count1 = 1;
 
 $seat_no='seat_no';
  $sql2="SELECT * FROM `fy_stud_data` WHERE seat_no='".$_SESSION['seat_no']."'";
@@ -78,6 +83,7 @@ $data2=mysqli_fetch_assoc($run2);
          		<th colspan="3">ECHEM1</th>
          		<th colspan="3">EMECH</th>
          		<th colspan="3">BEE</th>   
+				<th colspan="1">BWORKSHOP1</th>
          	</tr>
          	<tr>
          		<!--EMATHS1-->
@@ -99,6 +105,8 @@ $data2=mysqli_fetch_assoc($run2);
          		<th>Int</th>
          		<th>Ext</th>
                <th>Pract</th>
+			   <!--BW-->
+         	  <th>Pract</th>
          	</tr>
          	<tr>
          		<!--EMATHS1-->
@@ -117,8 +125,7 @@ $data2=mysqli_fetch_assoc($run2);
                   }
                ?>
          	
-
-         		<!--EPHY1-->
+        		<!--EPHY1-->
          		<td><?php echo $data2['in_ephy1'];?></td>
                <?php
                   if ($data2['in_ephy1']>=10) 
@@ -209,12 +216,20 @@ $data2=mysqli_fetch_assoc($run2);
                      $count++;
                   }
                ?>
+			   	<!--BW1-->
+         		<td><?php echo $data2['p_workshop1'];?></td>
+               <?php
+                  if ($data2['p_workshop1']>=10) 
+                  {
+                     $count++;
+                  }
+               ?>
 
          	</tr>
             <tr>
                <!--EMATHS1-->
                <td colspan="2"><?php echo $total1=$data2['in_emaths1']+$data2['te_emaths1']; ?></td>
-               <td> </td>
+               
                <!--EPHY1-->
                <td colspan="2"><?php echo $total2=$data2['in_ephy1']+$data2['te_ephy1']; ?></td>
                <td></td>
@@ -231,7 +246,7 @@ $data2=mysqli_fetch_assoc($run2);
 
             <tr>
                <th>Total Marks</th>
-               <td colspan="14"><?php echo $all=$total1+$total2+$data2['p_ephy1']+$total3+$data2['p_echem1']+$total4+$data2['p_emech']+$total5+$data2['p_bee'] ; ?>/750</td>
+               <td colspan="14"><?php echo $all=$total1+$total2+$data2['p_ephy1']+$total3+$data2['p_echem1']+$total4+$data2['p_emech']+$total5+$data2['p_bee']+$data2['p_workshop1']; ?>/750</td>
             </tr>
             <tr>
                <th>Grade</th>
@@ -313,19 +328,18 @@ $data2=mysqli_fetch_assoc($run2);
                 <th colspan="15">Subject</th>
             </tr>
             <tr>
-               <th colspan="3">EMATHS2</th>
+               <th colspan="2">EMATHS2</th>
                <th colspan="3">EPHY2</th>
                <th colspan="3">ECHEM2</th>
-               <th colspan="3">EG</th>
-               <th colspan="3">CP</th>
-               <th colspan="3">PCE1</th>   
+               <th colspan="3">EGRAPH</th>
+               <th colspan="3">C</th>
+               <th colspan="1">BWORKSHOP2</th>   
             </tr>
             <tr>
                <!--EMATHS2-->
                <th>Int</th>
                <th>Ext</th>
-               <th>Pract</th>
-               <!--EPHY2-->
+				<!--EPHY2-->
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
@@ -341,10 +355,8 @@ $data2=mysqli_fetch_assoc($run2);
                <th>Int</th>
                <th>Ext</th>
                <th>Pract</th>
-               <!--PCE1-->
-               <th>Int</th>
-               <th>Ext</th>
-               <th>Pract</th>
+               <!--Workshop2-->
+				<th>Pract</th>
             </tr>
             <tr>
                <!--EMATHS2-->
@@ -362,13 +374,7 @@ $data2=mysqli_fetch_assoc($run2);
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_emaths2'];?></td>
-               <?php
-                  if ($data2['p_emaths2']>=20) 
-                  {
-                     $count1++;
-                  }
-               ?>
+              
 
                <!--EPHY2-->
                <td><?php echo $data2['in_ephy2'];?></td>
@@ -417,69 +423,55 @@ $data2=mysqli_fetch_assoc($run2);
                ?>
 
                <!--EG-->
-               <td><?php echo $data2['in_eg'];?></td>
+               <td><?php echo $data2['in_egraph'];?></td>
                <?php
-                  if ($data2['in_eg']>=10) 
+                  if ($data2['in_egraph']>=10) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['te_eg'];?></td>
+               <td><?php echo $data2['te_egraph'];?></td>
                <?php
-                  if ($data2['te_eg']>=30) 
+                  if ($data2['te_egraph']>=30) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_eg'];?></td>
+               <td><?php echo $data2['p_egraph'];?></td>
                <?php
-                  if ($data2['p_eg']>=30) 
+                  if ($data2['p_egraph']>=30) 
                   {
                      $count1++;
                   }
                ?>
 
                <!--CP-->
-               <td><?php echo $data2['in_cp'];?></td>
+               <td><?php echo $data2['in_c'];?></td>
                <?php
-                  if ($data2['in_cp']>=10) 
+                  if ($data2['in_c']>=10) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['te_cp'];?></td>
+               <td><?php echo $data2['te_c'];?></td>
                <?php
-                  if ($data2['te_cp']>=30) 
+                  if ($data2['te_c']>=30) 
                   {
                      $count1++;
                   }
                ?>
-               <td><?php echo $data2['p_cp'];?></td>
+               <td><?php echo $data2['p_c'];?></td>
                <?php
-                  if ($data2['p_cp']>=30) 
+                  if ($data2['p_c']>=30) 
                   {
                      $count1++;
                   }
                ?>
 
-               <!--PCE1-->
-               <td><?php echo $data2['in_pce1'];?></td>
+               <!--BW2-->
+				<td><?php echo $data2['p_workshop2'];?></td>
                <?php
-                  if ($data2['in_pce1']>=10) 
-                  {
-                     $count1++;
-                  }
-               ?>
-               <td><?php echo $data2['te_pce1'];?></td>
-               <?php
-                  if ($data2['te_pce1']>=30) 
-                  {
-                     $count1++;
-                  }
-               ?>
-               <td><?php echo $data2['p_pce1'];?></td>
-               <?php
-                  if ($data2['p_pce1']>=20) 
+                  if ($data2['p_workshop2']>=20) 
                   {
                      $count1++;
                   }
@@ -489,7 +481,7 @@ $data2=mysqli_fetch_assoc($run2);
             <tr>
                <!--EMATHS2-->
                <td colspan="2"><?php echo $total6=$data2['in_emaths2']+$data2['te_emaths2']; ?></td>
-               <td></td>
+               
                <!--EPHY2-->
                <td colspan="2"><?php echo $total7=$data2['in_ephy2']+$data2['te_ephy2']; ?></td>
                <td></td>
@@ -497,18 +489,18 @@ $data2=mysqli_fetch_assoc($run2);
                <td colspan="2"><?php echo $total8=$data2['in_echem2']+$data2['te_echem2']; ?></td>
                <td></td>
                <!--EG-->
-               <td colspan="2"><?php echo $total9=$data2['in_eg']+$data2['te_eg']; ?></td>
+               <td colspan="2"><?php echo $total9=$data2['in_egraph']+$data2['te_egraph']; ?></td>
                <td></td>
                <!--CP-->
-               <td colspan="2"><?php echo $total9=$data2['in_cp']+$data2['te_cp']; ?></td>
-               <td></td>
+               <td colspan="2"><?php echo $total10=$data2['in_c']+$data2['te_c']; ?></td>
+			   <td></td>
                <!--PCE1-->
-               <td colspan="2"><?php echo $total10=$data2['in_pce1']+$data2['te_pce1']; ?></td>
-               <td></td>    
+               <td colspan="2"><?php echo $total11=$data2['p_workshop2']; ?></td>
+                
             </tr>
             <tr>
                <th>Total Marks</th>
-               <td colspan="14"><?php echo $all=$total6+$data2['p_emaths2']+$total7+$data2['p_ephy2']+$total8+$data2['p_echem2']+$total9+$data2['p_eg']+$total7+$data2['p_cp']+$total10+$data2['p_pce1'] ; ?>/750</td>
+               <td colspan="14"><?php echo $all=$total6+$total7+$data2['p_ephy2']+$total8+$data2['p_echem2']+$total9+$data2['p_egraph']+$total10+$data2['p_c']+$total11 ; ?>/750</td>
             </tr>
             <tr>
                <th>Grade</th>

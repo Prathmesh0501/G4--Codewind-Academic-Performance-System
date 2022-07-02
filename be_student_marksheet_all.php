@@ -9,11 +9,15 @@
     <script type="text/javascript"></script>
 </head>
 <body>
-   <div class="title">
-    <h1 align="center">Final Year Performance Report</h1>
-   </div>
-
-     <a href="ty_student_login.php">Logout</a>
+<div class="header">
+      <ol>
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+      </ol>
+      <ul>
+      <a href="be_student_login.php">Logout</a> 
+      </ul>
+    </div>
+  </header>
 
    <?php
 

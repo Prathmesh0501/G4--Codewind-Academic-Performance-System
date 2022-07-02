@@ -9,9 +9,6 @@
 <body>
 <header>
         <div class="header">
-        <!-- <ol> 
-        <img src="https://i.pinimg.com/originals/19/46/9a/19469aed7f222d6009f48158a682bb9c.png">
-        </ol> -->
         <ol> 
         <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
         </ol>
@@ -25,22 +22,22 @@
   <h2 style="text-align:center">WELCOME TEACHER</h2>
   <div class="t_lgn login">
             <img style="width: 100px;" src="https://cdn-icons-png.flaticon.com/512/476/476761.png">
-            <button onclick="myOnClickFn()" > Student's List </button>
+            <button onclick="myOnClickFn()" > View Student's List </button>
         </div>
         <script>
             function myOnClickFn() {
-                document.location.href = "student_list_main.html";
+                document.location.href = "view_students_list.html";
             }
         </script>
 
         <div class="s_lgn login">
             <img style="width: 100px;" src="https://cdn-icons-png.flaticon.com/512/4727/4727424.png">
-            <button onclick="studentClickFn()"> Add Student </button>
+            <button onclick="studentClickFn()"> Add Student Marks </button>
         </div>
 
         <script>
             function studentClickFn() {
-                document.location.href = "add_student.php";
+                document.location.href = "add_student_marks.html";
             }
         </script>
     </div>

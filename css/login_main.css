@@ -81,11 +81,12 @@ ul li.active a {
 }
 
 button {
-  padding: 8px;
-  width: 30%;
+  padding: 13px;
+  width: 40%;
   margin: auto;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 button:hover {

@@ -16,13 +16,13 @@
     </script>
 </head>
 <body>
-<header>
-    <div class="header">
+
+<div class="header">
       <ol>
         <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
       </ol>
       <ul>
-        <li><a href="ty_student_list.php"><u>Previous Page</u></a></li>
+      <li><a href="ty_student_list.php"><u>Previous Page</u></a></li>
       </ul>
     </div>
   </header>
@@ -44,7 +44,7 @@
              <?php 
 	            	if (isset($_GET['id']))
 	            	 {
-	            		$db = mysqli_connect('localhost','root','','Apes');
+	            		$con = mysqli_connect('localhost','root','','apes');
 	            		
 					 	function validate($data)
 					 	{
@@ -57,7 +57,7 @@
 						$id = validate($_GET['id']);	
 	            		$sql = "SELECT * FROM ty_stud_data WHERE id = '$id' ";
 	            	
-	            		$result = mysqli_query($db,$sql);
+	            		$result = mysqli_query($con,$sql);
      
 
 	            		if(mysqli_num_rows($result)>0)
@@ -112,7 +112,7 @@
         		
         		<div class="internal details">
 	        	
-		        	<h2 class="name">
+		        	<h2 class="sem">
 		            Semester V</h2> 
 		            <?php if (isset($_GET['error'])) { ?>
 		   <div class="alert alert-danger" role="alert">
@@ -147,8 +147,8 @@
                     <td>20</td>
                 </tr>
                 <tr>
-                    <td>Optional Course- 1</td>
-                    <td><input class="obt_marks" type="text" name="in_oc1" value="<?=$rows['in_oc1']?>"></td>
+                    <td>Internet Programming</td>
+                    <td><input class="obt_marks" type="text" name="in_ip" value="<?=$rows['in_ip']?>"></td>
                     <td>20</td>
                 </tr>
             </table>
@@ -157,7 +157,7 @@
 
 	        <div class="practical details">
 	        	
-		        	<h2 class="name">
+		        	<h2 class="sem">
 		            Semester V</h2> 
 		            
 		            <table class="marks" >
@@ -181,22 +181,23 @@
                     <td><input class="obt_marks" type="text" name="p_dwm" value="<?=$rows['p_dwm']?>"></td>
                     <td>50</td>
                 </tr>
+				 <tr>
+                    <td>Internet Programming</td>
+                    <td><input class="obt_marks" type="text" name="p_ip" value="<?=$rows['p_ip']?>"></td>
+                    <td>50</td>
+                </tr>
                 <tr>
                     <td>Business Comm. & Ethics II </td>
-                    <td><input class="obt_marks" type="text" name="p_bce2" value="<?=$rows['p_bce2']?>"></td>
+                    <td><input class="obt_marks" type="text" name="p_pce" value="<?=$rows['p_pce']?>"></td>
                     <td>50</td>
-                </tr>
-                    <td>Mini Project 2-A</td>
-                    <td><input class="obt_marks" type="text" name="p_mini3" value="<?=$rows['p_mini3']?>"></td>
-                    <td>50</td>
-                </tr>
+                
             </table>
 
 	        </div>
 
 	        <div class="theory details">
 	        	
-		        	<h2 class="name">
+		        	<h2 class="sem">
 		            Semester V</h2> 
 		            
 		            <table class="marks" >
@@ -208,27 +209,27 @@
                 <tr>
                     <td>Theoretical Computer Science </td>
                     <td><input class="obt_marks" type="text" name="te_tcs" value="<?=$rows['te_tcs']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Software Engineering</td>
                     <td><input class="obt_marks" type="text" name="te_se" value="<?=$rows['te_se']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Computer Network</td>
                     <td><input class="obt_marks" type="text" name="te_cn" value="<?=$rows['te_cn']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Data Warehousing & Mining </td>
                     <td><input class="obt_marks" type="text" name="te_dwm" value="<?=$rows['te_dwm']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
-                    <td>Optional Course- 1</td>
-                    <td><input class="obt_marks" type="text" name="te_oc1" value="<?=$rows['te_oc1']?>"></td>
-                    <td>75</td>
+                    <td>Internet Programming</td>
+                    <td><input class="obt_marks" type="text" name="te_ip" value="<?=$rows['te_ip']?>"></td>
+                    <td>80</td>
                 </tr>
             </table>
 
@@ -255,7 +256,7 @@
         		
         		<div class="internal detailed">
 	        	
-		            <h2 class="name">
+		            <h2 class="sem">
 		            Semester VI</h2> 
 		            
 		            <table class="marks" >
@@ -285,8 +286,8 @@
                     <td>20</td>
                 </tr>
                 <tr>
-                    <td>Optional Course -2</td>
-                    <td><input class="obt_marks" type="text" name="in_oc2" value="<?=$rows['in_oc2']?>"></td>
+                    <td>Internet Of Things</td>
+                    <td><input class="obt_marks" type="text" name="in_iot" value="<?=$rows['in_iot']?>"></td>
                     <td>20</td>
                 </tr>
             </table>
@@ -294,7 +295,7 @@
 
 	        <div class="practical detailed">
 	      
-		           <h2 class="name">
+		           <h2 class="sem">
 		            Semester VI</h2> 
 		            
 		            <table class="marks" >
@@ -302,6 +303,11 @@
                     <th>Subject</th>
                     <th>Obtained Marks.</th>
                     <th>Out of Marks(total)</th>
+                </tr>
+				 <tr>
+                    <td>System Programming & Compiler Construction</td>
+                    <td><input class="obt_marks" type="text" name="p_spcc" value="<?=$rows['p_spcc']?>"></td>
+                    <td>50</td>
                 </tr>
                 <tr>
                     <td>Cryptography & System Security </td>
@@ -320,20 +326,16 @@
                 </tr>
                 <tr>
                     <td>Cloud Computing</td>
-                    <td><input class="obt_marks" type="text" name="p_cc" value="<?=$rows['p_cc']?>"></td>
+                    <td><input class="obt_marks" type="text" name="p_sblc" value="<?=$rows['p_sblc']?>"></td>
                     <td>50</td>
                 </tr>
-                <tr>
-                    <td>Mini Project Lab: 2B</td>
-                    <td><input class="obt_marks" type="text" name="p_mini4" value="<?=$rows['p_mini4']?>"></td>
-                    <td>50</td>
-                </tr>
+                
             </table>
 	        </div>
 
 	        <div class="theory detailed">
 	        	
-		           <h2 class="name">
+		           <h2 class="sem">
 		            Semester VI</h2> 
 		            
 		            <table class="marks" >
@@ -345,27 +347,27 @@
                 <tr>
                     <td>System Programming & Compiler Construction</td>
                     <td><input class="obt_marks" type="text" name="te_spcc" value="<?=$rows['te_spcc']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Cryptography & System Security </td>
                     <td><input class="obt_marks" type="text" name="te_css" value="<?=$rows['te_css']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Mobile Computing</td>
                     <td><input class="obt_marks" type="text" name="te_mc" value="<?=$rows['te_mc']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>Artificial Intelligence</td>
                     <td><input class="obt_marks" type="text" name="te_ai" value="<?=$rows['te_ai']?>"></td>
-                    <td>75</td>
+                    <td>80</td>
                 </tr>
                 <tr>
-                    <td>Optional Course -2</td>
-                    <td><input class="obt_marks" type="text" name="te_oc2" value="<?=$rows['te_oc2']?>"></td>
-                    <td>75</td>
+                    <td>Internet Of Things</td>
+                    <td><input class="obt_marks" type="text" name="te_iot" value="<?=$rows['te_iot']?>"></td>
+                    <td>80</td>
                 </tr>
             </table>
 	        </div>

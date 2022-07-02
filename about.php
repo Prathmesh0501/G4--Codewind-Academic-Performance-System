@@ -6,9 +6,12 @@
         <link rel="stylesheet" type="text/css" href="css/about.css">
     </head>
     <body>
-        <header>
+    <header>
         <div class="header">
-          <ul>
+        <ol> 
+        <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
+        </ol>
+          <ul> 
             <li><a href="main.php">Home</a></li>
             <li><a href="login_main.php">Login</a></li>
             <li class="active"><a href="about.php">About</a></li>
@@ -25,7 +28,7 @@
       
                     </p>
                     <p>
-                        This Academic Performance Evaluation System is designed by <i>Aeraf Shaikh</i> <i>Varun Margam</i> <i>Prathmesh Kadwe</i> <i>Umang Kambli </i> and <i>Other members of Group 4 </i> for out Code Wind Internship Project.
+                        This Academic Performance Evaluation System is designed by <i>Aeraf Shaikh</i>, <i>Varun Margam</i>, <i>Prathmesh Kadwe</i>, <i>Umang Kambli </i> and <i>Other members of Group 4 </i> for Code Wind Internship Project.
                     </p>
                     
                 

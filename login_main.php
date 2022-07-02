@@ -45,14 +45,19 @@
 
         <script>
             function studentClickFn() {
-                document.location.href = "student_list_main.html";
+                document.location.href = "student_login_main.html   ";
             }
         </script>
 
         <div class="a_lgn login">
             <img style="width: 100px;" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-            <button onclick="studentClickFn()"> Admin Login </button>
+            <button onclick="adminClickFn()"> Admin Login </button>
         </div>
+        <script>
+            function adminClickFn() {
+                document.location.href = "admin_login.php   ";
+            }
+        </script>
     </div>
 </body>
 </html>

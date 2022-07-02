@@ -16,7 +16,7 @@
         <li>ACADEMIC PERFORMANCE EVALUATION SYSTEM</li>
       </ol>
       <ul>
-        <li><a href="teacher_login_main.php"><u>Previous Page</u></a></li>
+        <li><a href="student.html"><u>Previous Page</u></a></li>
       </ul>
     </div>
   </header>
